@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <meta charset="utf-8">
+         <title>SELECTORS | CSS</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             /*--------------------
+             ----------ID----------
+             --------------------*/
+             #first {
+                 color: red;
+                 text-align: center;
+             }
+             /*--------------------
+             --------CLASS---------
+             --------------------*/
+             .second {
+                 color: red;
+                 text-align: center;
+             }
+             p.third {
+                 color:red;
+                 text-align: center;
+             }
+             .fourth {
+                 color: red;
+                 text-align: center;
+             }
+             .fifth {
+                 font-size:300%;
+             }
+         </style>
+     </head>
+     <body>
+         <p id="first">Hello World!</p>
+         <p>These paragraphs are styled with CSS.</p>
+
+         <hr size="5" noshade>
+
+         <h1 class="second">Red and center-aligned heading</h1>
+         <p class="second">Red and center-aligned paragraph.</p>
+
+         <hr size="5" noshade>
+         <h1 class="third">This heading will not be affected</h1>
+         <p class="third">This paragraph will be red and center-aligned.</p>
+
+         <hr size="5" noshade>
+
+         <h1>This heading will not be affected</h1>
+         <p class="fourth">This paragraph will be red and center-aligned.</p>
+         <p class="fourth fifth">This paragraph will be red, center-aligned, and in a large font-size.</p>
+     </body>
+ </html>
