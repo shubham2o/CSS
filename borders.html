@@ -1,7 +1,7 @@
  <!DOCTYPE html>
  <html lang="en-us">
      <head>
-         <title>TYPES & WIDTH OF BORDERS </title>
+         <title>TYPES_WIDTH_COLORS_OF_BORDERS </title>
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <style>
@@ -104,6 +104,30 @@
                  border-width: 5px 10px 17px 27px; 
                  /* 5px top, 10px right, 17px bottom, 27px left */
              }
+             /*------------------------------------------
+             --------------BORDER COLOR------------------
+             ------------------------------------------*/
+             .ten {
+                 border-style: solid;
+                 border-color: red;
+             }
+             .eleven {
+                 border-style: solid;
+                 border-color: green;
+             }
+             .twelve {
+                 border-style: dotted;
+                 border-color: blue;
+             }
+             /*------------------------------------------
+             -----------SPECIFIC SIDE COLOR--------------
+             ------------------------------------------*/
+             .thirteen {
+                 border-style: solid;
+                 border-width: 5px;
+                 border-color: yellow blue green red;
+                 /* yellow top, blue right, green bottom and red left */
+             }
          </style>
      </head> 
      <body>
@@ -135,9 +159,11 @@
              A hidden border.</p>
          <p class="mixed">
              A mixed border.</p>
+            
          <br><br><br>
          <hr noshade><hr noshade><hr noshade>
          <br><br><br>
+        
          <!------------------------------------------
          ----------------BORDER WIDTH----------------
          ------------------------------------------->
@@ -155,9 +181,11 @@
              Double 15px</p>
          <p class="six">
              Double thick</p>
+            
          <br><br><br>
          <hr noshade><hr noshade><hr noshade>
          <br><br><br>
+        
          <!------------------------------------------
          ------------SPECIFIC SIDE WIDTHS------------
          ------------------------------------------->
@@ -168,5 +196,34 @@
          <p class="seven">Some text.</p>
          <p class="eight">Some text.</p>
          <p class="nine">Some text.</p>
+
+         <br><br><br>
+         <hr size="5" noshade><hr size="5" noshade=""><hr size="5" noshade>
+         <br><br><br>
+        
+         <!------------------------------------------
+         ---------------BORDER COLOR-----------------
+         ------------------------------------------->
+         <h1>The border-color Property</h1>
+         <p>This property specifies the color of the four borders:</p>
+         <br>
+         <p class="ten">A solid red border</p>
+         <p class="eleven">A solid green border</p>
+         <p class="twelve">A dotted blue border</p>
+         <p><strong>Note:</strong> The "border-color" property does not work if it 
+             is used alone. Use the "border-style" property to set the borders first.</p>
+
+             <br><br><br>
+             <hr size="5" noshade><hr size="5" noshade=""><hr size="5" noshade>
+             <br><br><br>
+
+         <!------------------------------------------
+         ------------SPECIFIC SIDE COLOR-------------
+         ------------------------------------------->
+         <h1>The border-color Property</h1>
+         <p>The border-color property can have from one to four values (for the top
+             border, right border, bottom border, and the left border):</p>
+         <br>
+         <p class="thirteen">A solid multicolor border</p>
      </body>
  </html>
