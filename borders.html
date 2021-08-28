@@ -86,8 +86,26 @@
                  border-style: double;
                  border-width: thick;
              }
+             /*------------------------------------------
+             ------------SPECIFIC SIDE  WIDTH------------
+             ------------------------------------------*/
+             .seven {
+                 border-style: solid;
+                 border-width: 5px 20px; 
+                 /* 5px top and bottom, 20px on the sides */
+             }
+             .eight {
+                 border-style: solid;
+                 border-width: 20px 5px; 
+                 /* 20px top and bottom, 5px on the sides */
+             }
+             .nine {
+                 border-style: solid;
+                 border-width: 5px 10px 17px 27px; 
+                 /* 5px top, 10px right, 17px bottom, 27px left */
+             }
          </style>
-     </head>
+     </head> 
      <body>
          <!------------------------------------------
          -------------TYPES OF BORDERS---------------
@@ -137,5 +155,18 @@
              Double 15px</p>
          <p class="six">
              Double thick</p>
+         <br><br><br>
+         <hr noshade><hr noshade><hr noshade>
+         <br><br><br>
+         <!------------------------------------------
+         ------------SPECIFIC SIDE WIDTHS------------
+         ------------------------------------------->
+         <h1>Specific Side Widths</h1>
+         <br>
+         <p>The border-width property can have from one to four values (for the 
+             top border, right border, bottom border, and the left border):</p>
+         <p class="seven">Some text.</p>
+         <p class="eight">Some text.</p>
+         <p class="nine">Some text.</p>
      </body>
  </html>
