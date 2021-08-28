@@ -1,0 +1,15 @@
+ body {
+     background-color:lightblue;
+ }
+ h1 {
+     color: navy ;
+     margin-left: 20px;
+ }
+ /*-----------------------------
+ ------MULTIPLE STYLE SHEETS----
+ -----------------------------*/
+ h2 {
+     color: darkgreen;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+ }
