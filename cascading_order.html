@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <meta charset="utf-8">
+         <title>CASCADING ORDER</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-------------------------------------------------
+         -----------------EXTERNAL CSS----------------------
+         -------------------------------------------------->
+         <link rel="stylesheet" href="cascading_order.css">
+         <!-------------------------------------------------
+         -----------------INTERNAL CSS----------------------
+         -------------------------------------------------->
+         <style>
+             body {
+                 background-color: pink;
+             }
+             h1 {
+                 color: purple;
+             }
+         </style>
+     </head>
+         <!-------------------------------------------------
+         -----------------INLINE CSS------------------------
+         -------------------------------------------------->
+     <body style="background-color: green;">
+         <h1 style="color: white;">Multiple Styles Will Cascade into One</h1>
+         <p>Here, the background color of the page is set with inline CSS, and also with an internal CSS, 
+             and also with an external CSS.</p>
+         <p>Try experimenting by removing styles to see how the cascading stylesheets work (try removing 
+             the inline CSS first, then the internal, then the external).</p>
+     </body>
+ </html>
