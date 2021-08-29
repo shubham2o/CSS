@@ -118,8 +118,18 @@
                   outline: 5px solid yellow;
              }
              div.seventeen {
-                 border :5 px solid green;
+                 border : 5 px solid green;
                  outline: 8px solid pink;
+             }
+             /*-------------------------------
+             -----OUTLINE OFFSET PROPERTY-----
+             -------------------------------*/
+             div.eighteen {
+                 border: 7px solid black;
+                 outline: 10px solid red;
+                 outline-offset: 15px;
+                 margin: 30px;
+                 background:aqua;
              }
          </style>
      </head>
@@ -180,6 +190,15 @@
          <div class="sixteen">A 5px solid yellow outline.</div>
          <br><br>
          <div class="seventeen">A thick ridge pink outline.</div>
-         <br>
+         <br><br>
+
+         <br><hr size="5" noshade><br>
+
+         <!-------------------------------
+         --------OUTLINE OFFSET-----------
+         -------------------------------->
+         <h1>The outline-offset property</h1>
+         <div class="eighteen">This paragraph has an outline 15px outside the border edge.
+         </div>
      </body>
  </html>
