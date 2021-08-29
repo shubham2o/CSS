@@ -6,8 +6,32 @@
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <style>
              div {
-                 border: 3px double navy;
+                 border: 3px solid navy;
                  margin: 50px;
+             }
+             /*-------------------------------
+             --------INDIVIDUAL SIDES---------
+             -------------------------------*/
+             div.one {
+                 border: 3px solid navy;
+                 margin-top: 100px;
+                 margin-right: 150px;
+                 margin-bottom: 100px;
+                 margin-left: 80px;
+                 background-color: skyblue;
+             }
+             /*-------------------------------
+             --------SHORTHAND PROPERTY-------
+             -------------------------------*/
+             div.two {
+                 margin: 25px 50px 75px 100px;
+                 border: 3px solid navy;
+                 background-color: pink;
+             }
+             div.three {
+                 margin: 25px 50px 75px;
+                 border: 3px solid navy;
+                 background-color: yellowgreen;
              }
          </style>
      </head>
@@ -15,6 +39,39 @@
          <h1>CSS Margins</h1>
          <div>
              <p>This element has a margin of 50px.</p>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!-------------------------------
+         --------INDIVIDUAL SIDES---------
+         -------------------------------->
+         <h1>Using individual margin properties</h1>
+         <div class="one">
+             <p>This div element has a top margin of 100px, a right margin of 150px,
+                 a bottom margin of 100px, and a left margin of 80px.
+             </p>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!-------------------------------
+         --------SHORTHAND PROPERTY-------
+         -------------------------------->
+         <h1>The margin shorthand property - 4 values</h1>
+         <div class="two">
+             <p>This div element has a top margin of 25px, a right margin of 50px,
+                 a bottom margin of 75px, and a left margin of 100px.
+             </p>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <h1>The margin shorthand property - 3 values</h1>
+         <div class="three">
+             <p>This div element has a top margin of 25px, a right and left margin of 50px,
+                 and a bottom margin of 75px.
+             </p>
          </div>
      </body>
  </html>
