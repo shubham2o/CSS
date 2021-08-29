@@ -38,6 +38,26 @@
                  border: 3px solid navy;
                  background-color: tomato;
              }
+             /*-------------------------------
+             ----------THE AUTO VALUE---------
+             -------------------------------*/
+             div.five {
+                 border: 3px solid navy;
+                 background-color: brown;
+                 margin: auto;
+                 width: 300px;
+             }
+             /*-------------------------------
+             --------THE INHERIT VALUE--------   
+             -------------------------------*/
+             div.six {
+                 margin-left: 100px;
+                 border: 3px solid navy;
+                 background-color: magenta;
+             }
+             .seven {
+                 margin-left: inherit;
+             }
          </style>
      </head>
      <body>
@@ -86,6 +106,31 @@
              <p>This div element has a top and bottom margin of 25px, and a right and left
                  margin of 50px.
              </p>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!-------------------------------
+         ---------THE AUTO VALUE----------   
+         -------------------------------->
+         <h1>Use of margin:auto</h1>
+         <p>You can set the margin property to auto to horizontally center the element 
+             within its container. The element will then take up the specified width, and
+              the remaining space will be split equally between the left and right margins:
+         </p>
+         <div class="five">
+             <p>This div will be horizontally centered becuase it has margin: auto;</p>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!-------------------------------
+         --------THE INHERIT VALUE--------   
+         -------------------------------->
+         <h1>Use of the inherit value</h1>
+         <p>Let the left margin be inherited from the parent element:</p>
+         <div class="six">
+             <p class="seven">This paragraph has an inherited left margin (from the div element).</p>
          </div>
      </body>
  </html>
