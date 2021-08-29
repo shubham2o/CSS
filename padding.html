@@ -5,14 +5,124 @@
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <style>
-             div {
+             div.one {
                  border: 3px solid maroon;
                  padding: 70px;
+                 background-color: aquamarine;
+             }
+             /*---------------------------------
+             ----------INDIVIDUAL SIDES---------
+             ---------------------------------*/
+             div.two {
+                 border: 3px solid maroon;
+                 padding-top: 50px;
+                 padding-right: 30px;
+                 padding-bottom: 50px;
+                 padding-left: 80px;
+                 background-color: aqua;
+             }
+             /*---------------------------------
+             -------SHORTHAND PROPERTY----------
+             ---------------------------------*/
+             div.three {
+                 border: 3px solid maroon;
+                 background-color: blueviolet;
+                 padding: 25px 50px 75px 100px;
+             }
+             div.four {
+                 border: 3px solid maroon;
+                 background-color: burlywood;
+                 padding: 25px 50px 75px;
+             }
+             div.five{
+                 border: 3px solid maroon;
+                 background-color: darkgreen;
+                 padding: 25px 50px;
+             }
+             /*----------------------------------
+             -----PADDING AND ELEMENT WIDTH-----
+             ---------------------------------*/
+             div.six {
+                 background-color: darkorange;
+                 width: 300px;
+                 border: 3px solid maroon;
+             }
+             div.seven {
+                 padding: 25px;
+                 width: 300px;
+                 background-color: deeppink;
+                 border: 3px solid maroon;
+             }
+             div.eight {
+                 width: 300px;
+                 background-color: lightseagreen;
+             }
+             div.nine {
+                 width: 300px;
+                 padding: 25px;
+                 background-color:lawngreen ;
+                 box-sizing: border-box;
              }
          </style>
      </head>
      <body>
          <h1>CSS Padding</h1>
-         <div>This element has a padding of 70px.</div>
+         <div class="one">This element has a padding of 70px.</div>
+
+         <br><hr size="5" noshade><br>
+
+         <!---------------------------------
+         ----------INDIVIDUAL SIDES---------
+         ---------------------------------->
+         <h1>Using individual padding properties</h1>
+         <div class="two">This div element has a top padding of 50px, a right padding of
+             30px, a bottom padding of 50px, and a left padding of 80px.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!---------------------------------
+         -------SHORTHAND PROPERTY----------
+         ---------------------------------->
+         <h1>The padding shorthand property - 4 values</h1>
+         <div class="three">This div element has a top padding of 25px, a right padding
+             of 50px, a bottom padding of 75px, and a left padding of 100px.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <h1>The padding shorthand property - 3 values</h1>
+         <div class="four">This div element has a top padding of 25px, a right and left
+             padding of 50px, and a bottom padding of 75px.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <h1>The padding shorthand property - 2 values</h1>
+         <div class="five">This div element has a top and bottom padding of 25px, and
+             a right and left padding of 50px.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!---------------------------------
+         -----PADDING AND ELEMENT WIDTH-----
+         ---------------------------------->
+         <h1>Padding and element width</h1>
+         <div class="six">This div is 300px wide.</div>
+         <br>
+         <div class="seven">The width of this div is 350px, even though it is defined as 
+             300px in the CSS.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <h1>Padding and element width - with box-sizing</h1>
+         <div class="eight">This div is 300px wide</div>
+         <br>
+         <div class="nine">The width of this div remains at 300px, in spite of the 50px
+             of total left and right padding, because of the box-sizing: border-box 
+             property.
+         </div>
      </body>
  </html>
