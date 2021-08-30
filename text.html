@@ -24,8 +24,53 @@
                  background-color: black;
                  color: white;
              }
+             /*------------------------------------
+             ---------TEXT ALIGN-JUSTIFY-----------
+             ------------------------------------*/
+             div.five {
+                 border: 10px solid orange;
+                 width: 500px;
+                 padding: 40px;
+                 margin: auto;
+                 text-align: justify;
+             }
+             /*-------------------------------------
+             -----------TEXT DIRECTION--------------
+             -------------------------------------*/
+             p.six {
+                 direction: rtl;
+             }
+             p.seven {
+                 direction: rtl;
+                 unicode-bidi: bidi-override;
+             }
+             /*------------------------------------
+             -----VERTICAL ALIGN PROPERTY----------
+             ------------------------------------*/
+             img.eight {
+                 vertical-align: baseline;
+             }
+             img.nine {
+                 vertical-align: text-top;
+             }
+             img.ten {
+                 vertical-align: text-bottom;
+             }
+             img.eleven {
+                 vertical-align: sub;
+             }
+             img.twelve {
+                 vertical-align: super;
+             }
+             /*------------------------------------
+             ------------TEXT DECORATION-----------
+             ------------------------------------*/
+             p.thirteen {
+                 text-decoration: none;
+             }
          </style>
      </head>
+     <!--==============================================================================================================================================================-->
      <body>
          <!------------------------------------
          ---------------COLOR------------------
@@ -37,7 +82,7 @@
          <p class="two">Another paragraph.</p>
 
          <br><hr size="5" noshade><br>
-         
+        
          <!------------------------------------
          ------TEXT AND BACKGROUND COLOR-------
          ------------------------------------->
@@ -46,5 +91,67 @@
              <p>This page has a grey background color and a blue text.</p>
              <p>Anoter paragraph.</p>
          </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!------------------------------------
+         ---------TEXT ALIGN-JUSTIFY-----------
+         ------------------------------------->
+         <h1>Example text-align: justify;</h1>
+         <p>The text-align: justify; value stretches the lines so that each line has equal
+             width (like in newspapers and magazines).
+         </p>
+         <div class="five">In my younger and more vulnerable years my father gave me some 
+             advice that I've been turning over in my mind ever since. 'Whenever you feel 
+             like criticizing anyone,' he told me, 'just remember that all the people in 
+             this world haven't had the advantages that you've had.'<br>
+             In my younger and more vulnerable years my father gave me some 
+             advice that I've been turning over in my mind ever since. 'Whenever you feel 
+             like criticizing anyone,' he told me, 'just remember that all the people in 
+             this world haven't had the advantages that you've had.
+             In my younger and more vulnerable years my father gave me some 
+             advice that I've been turning over in my mind ever since. 'Whenever you feel 
+             like criticizing anyone,' he told me, 'just remember that all the people in 
+             this world haven't had the advantages that you've had.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <!------------------------------------
+         -----------TEXT DIRECTION-------------
+         ------------------------------------->
+         <p>This is the default tex direction.</p>
+         <p class="six">Added direction as ltr (left to right).</p>
+         <p class="seven">Added both direction and unicode-bidi.</p>
+
+         <br><hr size="5" noshade><br>
+        
+         <!------------------------------------
+         -----VERTICAL ALIGN PROPERTY----------
+         ------------------------------------->
+         <h1>The vertical-align Property</h1>
+         <h2>vertical-align: baseline (default):</h2>
+         <p>An <img class="eight" src="sqpurple.gif"> image with a default alignment.</p>
+         <br>
+         <h2>vertical-align: text-top:</h2>
+         <p>An <img class="nine" src="sqpurple.gif"> image with a next-top alignment.</p>
+         <br>
+         <h2>vertical-align: text-bottom:</h2>
+         <p>An <img class="ten" src="sqpurple.gif"> image with a text-bottom alignment.</p>
+         <br>
+         <h2>vertical-align: sub:</h2>
+         <p>An <img class="eleven" src="sqpurple.gif"> image with a sub alignment.</p>
+         <br>
+         <h2>vertical-align: sup:</h2>
+         <p>An <img class="twelve" src="sqpurple.gif"> image with a super alignment.</p>
+
+         <br><hr size="5" noshade><br>
+
+         <!------------------------------------
+         ------------TEXT DECORATION-----------
+         ------------------------------------->
+         <p class="thirteen">A link with no underline: 
+             <a href="https://twitter.com/shubham2oo" title="Twitter.com">Twitter.com</a>
+         </p>
      </body>
  </html>
