@@ -20,10 +20,31 @@
              a:active {
                  color: orange;
              }
+             /*----------------------------
+             -------TEXT DECORATION--------
+             ----------------------------*/
+             a:link.one {
+                 text-decoration: none;
+                 color: brown;
+             }
+             a:visited.two {
+                 text-decoration: none;
+                 color: red;
+             }
+             a:hover.three {
+                 text-decoration: underline;
+                 color: peru;
+             }
+             a:active.four {
+                 text-decoration: und;
+                 color: magenta;
+             }
          </style>
      </head>
+     <!--==========================================================================================================================================================
+     ============================================================================================================================================================-->
      <body>
-         <h2>CSS Links</h2>
+         <h1>CSS Links</h1>
          <a href="https://twitter.com/shubham2oo" target="_blank"><b>This is a link</b></a>
 
          <br><br><hr size="5" noshade><br>
@@ -34,5 +55,13 @@
              CSS definition in order to be effective.</p>
          <p><strong>Note:</strong> a:active MUST come after a:hover in the CSS definition
              in order to be effective.</p>
+
+         <br><hr size="5" noshade><br>
+
+         <!----------------------------
+         -------TEXT DECORATION--------
+         ----------------------------->
+         <h1>CSS Links</h1>
+         <a href="https://www.w3schools.com/css/css_link.asp" target="_blank" class="one two three four">This is a link</a>
      </body>
  </html>
