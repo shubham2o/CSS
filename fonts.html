@@ -4,6 +4,7 @@
          <title>FONTS</title>
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Audiowide|Sofia&effect=fire|emboss|shadow-multiple">
          <style>
              .one {
                  font-family:'Times New Roman';
@@ -99,8 +100,26 @@
              .twenty3 {
                  font-size: 0.875em;
              }
+             /*---------------------------------
+             ----------GOOGLE FONTS-------------
+             ---------------------------------*/
+             div.twenty4 {
+                 color: navy;
+                 font-family: "Permanent Marker", sans-serif;
+             }
+             div.twenty5 {
+                 font-family: "Audiowide", sans-serif;
+                 color:navy;
+             }
+             div.twenty6 {
+                 font-family: "Sofia", sans-serif;
+                 color: navy;
+             }
+             h1.twenty7 {
+                 text-shadow: 6px 6px red;
+                 background-color: black;
+             }
          </style>
-
      </head>
      <!--=============================================================================================================================================================-->
      <body>
@@ -173,24 +192,58 @@
          ----------FONT SIZE %-------------
          --------------------------------->
          <h1><mark> PERCENTAGE </mark><h1>
-             <div class="twenty">
-                 <h1 class="twenty1">This is heading 1</h1>
-                 <h2 class="twenty2">This is heading 2</h2>
-                 <p class="twenty3">This is a paragraph.</p>
-                 <p class="twenty3">This is another paragraph.</p>
-             </div>
+         <div class="twenty">
+             <h1 class="twenty1">This is heading 1</h1>
+             <h2 class="twenty2">This is heading 2</h2>
+             <p class="twenty3">This is a paragraph.</p>
+             <p class="twenty3">This is another paragraph.</p>
+         </div>
 
-             <br><hr size="5" noshade=""><br>
+          <br><hr size="5" noshade=""><br>
 
-             <!--------------------------------
-             -------------VIEWPORT-------------
-             --------------------------------->
-             <h1>Responsive Text</h1>
-             <p style="font-size:5vw;">Resize the browser window to see how the text size 
-                 scales.</p>
-                 <p style="font-size:vw;">Use the "vw" unit when sizing the text. 
-                    10vw will et the size to 10% of the viewport width.</p>
-                 <p>Viewport is the browser window size. 1vw = 1% of viewport width.
-                     If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+         <!--------------------------------
+         -------------VIEWPORT-------------
+         --------------------------------->
+         <h1>VIEWPORT</h1>
+         <p style="font-size:5vw;">
+             Resize the browser window to see how the text size scales.
+         </p>
+         <p style="font-size:vw;">
+             Use the "vw" unit when sizing the text. 10vw will et the size to 10% of 
+             the viewport width.
+         </p>
+         <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the 
+             viewport is 50cm wide, 1vw is 0.5cm.
+         </p>
+
+         <br><hr size="5" noshade><br>
+
+         <!--------------------------------
+         ----------GOOGLE FONTS------------
+         --------------------------------->
+         <div class="twenty4">
+             <h1 class="twenty7 font-effect-fire">PERMANENT MARKER FONT</h1>
+             <p>My name is Shubham Sharma. I am 21 years old.<br>
+             I like to play basketball and to code as well.</p>
+             <p class="font-effect-fire">1234567890 0987 65 4321 0.</p>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <div class="twenty5">
+             <h1 class="twenty7 font-effect-shadow-multiple">AUDIOWIDE FONT</h1>
+             <p>My name is Shubham Sharma. I am 21 years old.<br>
+                 I like to play basketball and to code as well.</p> 
+             <p class="font-effect-fire">1234567890 0987 65 4321 0.</p>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <div class="twenty6">
+             <h1 class="twenty7 font-effect-emboss">SOFIA FONT</h1>
+             <p>My name is Shubham Sharma. I am 21 years old.<br>
+                 I like to play basketball and to code as well.</p>
+             <p class="font-effect-fire">1234567890 0987 65 4321 0.</p>
+         </div>
      </body>
  </html>
