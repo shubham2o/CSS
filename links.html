@@ -23,21 +23,42 @@
              /*----------------------------
              -------TEXT DECORATION--------
              ----------------------------*/
-             a:link.one {
+             a.one:link {
                  text-decoration: none;
                  color: brown;
+                 background-color: orangered; /*BACKGROUND COLOR*/
              }
-             a:visited.two {
+             a.two:visited {
                  text-decoration: none;
                  color: red;
+                 background-color: skyblue; /*BACKGROUND COLOR*/
              }
-             a:hover.three {
+             a.three:hover {
                  text-decoration: underline;
                  color: peru;
+                 background-color: lemonchiffon; /*BACKGROUND COLOR*/
              }
-             a:active.four {
-                 text-decoration: und;
+             a.four:active {
+                 text-decoration: underline;
                  color: magenta;
+                 background-color: aquamarine; /*BACKGROUND COLOR*/
+             }
+             /*----------------------------
+             --------LINK BUTTONS----------
+             ----------------------------*/
+             a.five:link, 
+             a.six:visited 
+             {
+                 background-color: tomato;
+                 color: black;
+                 padding: 15px 25px;
+                 text-decoration: none;
+                 text-align: center;
+             }
+             a.seven:hover, 
+             a.eight:active 
+             {
+                 background-color: red;
              }
          </style>
      </head>
@@ -62,6 +83,18 @@
          -------TEXT DECORATION--------
          ----------------------------->
          <h1>CSS Links</h1>
-         <a href="https://www.w3schools.com/css/css_link.asp" target="_blank" class="one two three four">This is a link</a>
+         <a href="https://www.brainpickings.org/" target="_blank" class="one two three four">
+             This is a link
+         </a>
+
+         <br><br><hr size="5" noshade><br>
+
+         <!----------------------------
+         --------LINK BUTTON-----------
+         ----------------------------->
+         <h1>Link Button</h1>
+         <p>A link styled as a button:</p>
+         <br>
+         <a href="https://codedamn.com/" target="_blank" class="five six seven eight">This is a link</a>
      </body>
  </html>
