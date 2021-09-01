@@ -45,6 +45,14 @@
                  width: 100%;
                  border-collapse: collapse;
              }
+             /*---------------------------------------
+             ---------SINGLE BORDER TABLE-------------
+             ---------------------------------------*/
+             .twelve {
+                 border: 2px solid black;
+                 width: 100%;
+                 border-collapse: collapse;
+             }
          </style>
      </head>
      <!--================================================================================================================================================================
@@ -117,7 +125,28 @@
          <br><br><hr size="5" noshade><br>
 
          <!---------------------------------------
-         ---------COLLAPSE TABLE BORDERS----------
+         ---------SINGLE BORDER TABLE-------------
          ---------------------------------------->
+         <h1>Single Border Around The Table</h1>
+         <table class="twelve">
+             <thead>
+                 <th>Firstname</th>
+                 <th>Lastname</th>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>Peter</td>
+                     <td>Griffin</td>
+                 </tr>
+                 <tr>
+                     <td>Lois</td>
+                     <td>Griffin</td>
+                 </tr>
+             </tbody>
+         </table>
+
+         <br><br><hr size="5" noshade><br>
+
+         
      </body>
  </html>
