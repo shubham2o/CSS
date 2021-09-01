@@ -144,6 +144,31 @@
              {
                  padding: 15px;
              }
+             /*---------------------------------------
+             ----------BORDERED TABLE DIVIDERS--------
+             ---------------------------------------*/
+             .thirty1,
+             .thirty2,
+             .thirty3 
+             {
+                 border-bottom: 2px solid black;
+                 text-align: center;
+             }
+             .thirty1 {
+                 width: 100%;
+                 border-collapse: collapse;
+             }
+             .thirty2,
+             .thirty3
+             {
+                 padding: 8px;
+             }
+             /*----------------------------
+             -----------HOVER--------------
+             ----------------------------*/
+             tr.thirty3:hover {
+                 background-color: yellow;
+             }
          </style>
      </head>
      <!--================================================================================================================================================================
@@ -444,6 +469,42 @@
                      <td class="thirty">Meg</td>
                      <td class="thirty">Griffin</td>
                      <td class="thirty">$250</td>
+                 </tr>
+             </tbody>
+         </table>
+
+         <br><br><hr size="5" noshade><br>
+
+         <!---------------------------------------
+         ----------BORDERED TABLE DIVIDERS--------
+         ---------------------------------------->
+         <h2>Add the border-bottom property to th and td for the horizontal dividers:</h2>
+         <table class="thirty1">
+             <thead>
+                 <th class="thirty2">Firstname</th>
+                 <th class="thirty2">Lastname</th>
+                 <th class="thirty2">Savings</th>
+             </thead>
+             <tbody>
+                 <tr class="thirty3">
+                     <td class="thirty3">Peter</td>
+                     <td class="thirty3">Griffin</td>
+                     <td class="thirty3">$100</td>
+                 </tr>
+                 <tr class="thirty3">
+                     <td class="thirty3">Lois</td>
+                     <td class="thirty3">Griffin</td>
+                     <td class="thirty3">$150</td>
+                 </tr>
+                 <tr class="thirty3">
+                     <td class="thirty3">Chris</td>
+                     <td class="thirty3">Griffin</td>
+                     <td class="thirty3">$300</td>
+                 </tr>
+                 <tr class="thirty3">
+                     <td class="thirty3">Meg</td>
+                     <td class="thirty3">Griffin</td>
+                     <td class="thirty3">$250</td>
                  </tr>
              </tbody>
          </table>
