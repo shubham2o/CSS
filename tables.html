@@ -128,6 +128,22 @@
                  vertical-align: bottom;
                  height: 40px;
              }
+             .twenty8,
+             .twenty9,
+             .thirty
+             {
+                 border: 2px solid black;
+             }
+             .twenty8 {
+                 width: 100%;
+                 border-collapse: collapse;
+                 text-align: center;
+             }
+             .twenty9,
+             .thirty
+             {
+                 padding: 15px;
+             }
          </style>
      </head>
      <!--================================================================================================================================================================
@@ -401,6 +417,35 @@
          ---------------TABLE PADDNG--------------
          ---------------------------------------->
          <h1>The padding Property</h1>
-         
+         <p>This property adds space between the border and the content in a table.</p>
+         <table class="twenty8">
+             <thead>
+                 <th class="twenty9">Firstname</th>
+                 <th class="twenty9">Lastname</th>
+                 <th class="twenty9">Savings</th>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td class="thirty">Peter</td>
+                     <td class="thirty">Griffin</td>
+                     <td class="thirty">$100</td>
+                 </tr>
+                 <tr>
+                     <td class="thirty">Lois</td>
+                     <td class="thirty">Griffin</td>
+                     <td class="thirty">$150</td>
+                 </tr>
+                 <tr>
+                     <td class="thirty">Chris</td>
+                     <td class="thirty">Griffin</td>
+                     <td class="thirty">$300</td>
+                 </tr>
+                 <tr>
+                     <td class="thirty">Meg</td>
+                     <td class="thirty">Griffin</td>
+                     <td class="thirty">$250</td>
+                 </tr>
+             </tbody>
+         </table>
      </body>
  </html>
