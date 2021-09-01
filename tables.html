@@ -20,8 +20,35 @@
                  border: 5px solid red;
                  padding: 5px 8px;
              }
+             /*---------------------------------------
+             -------------FULL WIDTH TABLE------------
+             ---------------------------------------*/
+             .four, 
+             .five, 
+             .six
+             {
+                 border: 2px solid black;
+             }
+             .seven {
+                 width: 100%;
+             }
+             /*---------------------------------------
+             ---------COLLAPSE TABLE BORDERS----------
+             ---------------------------------------*/
+             .eight,
+             .nine,
+             .ten 
+             {
+                 border: 2px solid black;
+             }
+             .eleven {
+                 width: 100%;
+                 border-collapse: collapse;
+             }
          </style>
      </head>
+     <!--================================================================================================================================================================
+     ==================================================================================================================================================================-->
      <body>
          <h1>Add a border to a table:</h1>
          <table class="one">
@@ -47,10 +74,50 @@
          -------------FULL WIDTH TABLE------------
          ---------------------------------------->
          <h1>Full-width Table</h1>
-         <table>
+         <table class="four seven">
              <thead>
-                 <th>Firstname</th>
+                 <th class="five">Firstname</th>
+                 <th class="five">Lastname</th>
              </thead>
+             <tbody>
+                 <tr>
+                     <td class="six">Peter</td>
+                     <td class="six">Griffin</td>
+                 </tr>
+                 <tr>
+                     <td class="six">Lois</td>
+                     <td class="six">Griffin</td>
+                 </tr>
+             </tbody>
          </table>
+
+         <br><br><hr size="5" noshade><br>
+
+         <!---------------------------------------
+         ---------COLLAPSE TABLE BORDERS----------
+         ---------------------------------------->
+         <h1>Let the borders collapse</h1>
+         <table class="eight eleven">
+             <thead>
+                 <th class="nine">Firstname</th>
+                 <th class="nine">Lastname</th>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td class="ten">Peter</td>
+                     <td class="ten">Griffin</td>
+                 </tr>
+                 <tr>
+                     <td class="ten">Lois</td>
+                     <td class="ten">Griffin</td>
+                 </tr>
+             </tbody>
+         </table>
+
+         <br><br><hr size="5" noshade><br>
+
+         <!---------------------------------------
+         ---------COLLAPSE TABLE BORDERS----------
+         ---------------------------------------->
      </body>
  </html>
