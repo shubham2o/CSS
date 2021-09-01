@@ -169,6 +169,32 @@
              tr.thirty3:hover {
                  background-color: yellow;
              }
+             /*----------------------------
+             --------STRIPED TABLE---------
+             ----------------------------*/
+             .thirty4,
+             .thirty5,
+             .thirty6
+             {
+                 border: 2px solid black;
+                 border-collapse: collapse;
+             }
+             .thirty4 {
+                 width: 100%;
+             }
+             .thirty5 {
+                 padding: 25px;
+                 background-color: pink;
+             }
+             .thirty6 {
+                 padding: 10px;
+             }
+             tr.thirty6:nth-child(even) {
+                 background-color: gray;
+             }
+             tr.thirty7:nth-child(odd) {
+                 background-color: aqua;
+             }
          </style>
      </head>
      <!--================================================================================================================================================================
@@ -507,6 +533,43 @@
                      <td class="thirty3">$250</td>
                  </tr>
              </tbody>
+         </table>
+
+         <br><br><hr size="5" noshade><br>
+         
+         <!---------------------------------------
+         --------------STRIPED TABLE--------------
+         ---------------------------------------->
+         <h1>Striped Table</h1>
+         <p>For zebra-striped tables, use the nth-child() selector and add a 
+             background-color to all even (or odd) table rows:</p>
+         <table class="thirty4 "> 
+             <thead>
+                 <th class="thirty5">Firstname</th>
+                 <th class="thirty5">Lastname</th>
+                 <th class="thirty5">Points</th>
+             </thead>
+             <tbody>
+                 <tr class="thirty6 thirty7">
+                     <td class="thirty6">Peter</td>
+                     <td class="thirty6">Griffin</td>
+                     <td class="thirty6">$100</td>
+                 </tr>
+                 <tr class="thirty6 thirty7">
+                     <td class="thirty6">Lois</td>
+                     <td class="thirty6">Griffin</td>
+                     <td class="thirty6">$150</td>
+                 </tr>
+                 <tr class="thirty6 thirty7">
+                     <td class="thirty6">Joe</td>
+                     <td class="thirty6">Griffin</td>
+                     <td class="thirty6">$300</td>
+                 </tr>
+                 <tr class="thirty6 thirty7">
+                     <td class="thirty6">Meg</td>
+                     <td class="thirty6">Griffin</td>
+                     <td class="thirty6">$250</td>
+                 </tr>
          </table>
      </body>
  </html>
