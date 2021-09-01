@@ -20,6 +20,14 @@
              ul.three {
                  list-style-position: inside;
              }
+             /*------------------------
+             --REMOVE DEFAULT SETTING--
+             ------------------------*/
+             ul.four {
+                 list-style-type: none;
+                 padding: 0;
+                 margin: 0;
+             }
          </style>
      </head>
      <!--==========================================================================================================================================================
@@ -76,5 +84,23 @@
                  drink's name refers to two of its original ingredients, which were kola nuts 
                  (a source of caffeine) and coca leaves
              </li>
+         </ul>
+
+         <br><hr size="5" noshade><br>
+
+         <!--------------------------------
+         -------LIST STYLE TYPE------------
+         --------------------------------->
+         <p>Default List:</p>
+         <ul>
+             <li>Coffee</li>
+             <li>Tea</li>
+             <li>Coca-Cola</li>
+         </ul>
+         <p>Remove bullets, margins and padding:</p>
+         <ul class="four">
+             <li>Coffee</li>
+             <li>Tea</li>
+             <li>Coca-Cola</li>
          </ul>
      </body>
