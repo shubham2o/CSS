@@ -96,6 +96,21 @@
                  float: right;
                  width: 150px;
              }
+             .eighteen,
+             .nineteen,
+             .twenty {
+                 border: 3px solid black;
+                 padding: 40px;
+                 width: 200px;
+                 float: left;
+                 background-color: lightgray;
+             }
+             .twenty1 {
+                 clear: both;
+             }
+             .twenty2 {
+                 box-sizing: border-box;
+             }
          </style>
      </head>
      <!--=============================================================================================================================================================
@@ -269,6 +284,22 @@
          <p class="sixteeen">
              <img src="pineapple.jpg" alt="Pineapple" class="seventeen">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+         </p>
+
+         <br><hr size="5" noshade><br>
+
+         <h2>Grid of Boxes</h2>
+         <p>Float boxes side by side:</p>
+         <div class="twenty2">
+             <div class="eighteen">Some text inside the box.</div>
+             <div class="nineteen">Some text inside the box.</div>
+             <div class="twenty">Some text inside the box.</div>
+         </div>
+         <p class="twenty1">
+             <strong>Note:</strong> Here, we use the clearfix hack to take care of the layout 
+             flow. 
+             We also use the box-sizing property to make sure that the box doesn't break due 
+             to extra padding. Try to remove this code to see the effect.
          </p>
      </body>
  </html>
