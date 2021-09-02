@@ -21,6 +21,20 @@
                  position: static;
                  border: 3px solid green;
              }
+             div.four {
+                 border: 3px solid green;
+                 width: 400px;
+                 height: 200px;
+                 position: relative;
+             }
+             div.five {
+                 border: 3px solid green;
+                 position: absolute;
+                 top: 80px;
+                 right: 0;
+                 width: 200px;
+                 height: 100px;
+             }
          </style>
      </head>
      <body>
@@ -43,5 +57,17 @@
              always positioned according to the normal flow of the page:
          </p>
          <div class="three">This div element has position: static;</div>
+
+         <br><hr size="5" noshade><br>
+
+         <h1>position: absolute;</h1>
+         <p>An element with position: absolute; is positioned relative to the nearest 
+             positioned ancestor (instead of positioned relative to the viewport, like fixed):
+         </p>
+             <div class="four">This div element has position: relative;
+                 <div class="five">
+                     This div element has position: absolute;
+                 </div>
+             </div>
      </body>
  </html>
