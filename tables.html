@@ -178,6 +178,7 @@
              {
                  border: 2px solid black;
                  border-collapse: collapse;
+                 text-align: center;
              }
              .thirty4 {
                  width: 100%;
@@ -194,6 +195,32 @@
              }
              tr.thirty7:nth-child(odd) {
                  background-color: aqua;
+             }
+             /*----------------------------
+             ------RESPONSIVE TABLE--------
+             ----------------------------*/
+             .thirty8,
+             .thirty9,
+             .fourty 
+             {
+                 border: 1px solid gray;
+                 border-collapse: collapse;
+                 margin: 20px;
+             }
+             .thirty8 {
+                 width: 100%;
+             }
+             .thirty9,
+             .fourty 
+             {
+                 padding: 12px;
+                 text-align: left;
+             }
+             tr.fourty1:nth-child(even) {
+                 background-color: aquamarine;
+             }
+             tr.fourty2:nth-child(odd) {
+                 background-color: lightcoral;
              }
          </style>
      </head>
@@ -571,5 +598,80 @@
                      <td class="thirty6">$250</td>
                  </tr>
          </table>
+
+         <br><br><hr size="5" noshade><br>
+         
+         <!---------------------------------------
+         -------------RESPONSIVE TABLE------------
+         ---------------------------------------->
+         <h2>Responsive Table</h2>
+         <p>A responsive table will display a horizontal scroll bar if the screen is too 
+           small to display the full content. Resize the browser window to see the effect:</p>
+         <p>To create a responsive table, add a container element (like div) with 
+             <strong>overflow-x:auto</strong> around the table element:</p>
+         <div style="overflow-x:auto;">
+             <table class="thirty8">
+                 <tr>
+                  <th class="thirty9">First Name</th>
+                  <th class="thirty9">Last Name</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                  <th class="thirty9">Points</th>
+                 </tr>
+                 <tr class="fourty1">
+                  <td class="fourty">Jill</td>
+                  <td class="fourty">Smith</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                  <td class="fourty">50</td>
+                 </tr>
+                 <tr class="fourty2">
+                  <td class="fourty">Eve</td>
+                  <td class="fourty">Jackson</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                  <td class="fourty">94</td>
+                 </tr>
+                 <tr class="fourty1">
+                  <td class="fourty">Adam</td>
+                  <td class="fourty">Johnson</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                  <td class="fourty">67</td>
+                 </tr>
+              </table>
+         </div>
+
+         <br><br><hr size="5" noshade><br>
+
+         
      </body>
  </html>
