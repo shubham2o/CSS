@@ -11,10 +11,30 @@
                  width: 60%;
                  height: 100px;
                  padding: 20px;
-                 overflow: scroll;
                  margin-left: 10px;
                  border: 1px solid gray;
                  text-align: justify;
+                 overflow: scroll;
+             }
+             div.two {
+                 border: 1px solid gray;
+                 width:35%;
+                 height: 52px;
+                 margin-left: 10px;
+                 background-color: lightgray;
+                 text-align: justify;
+                 padding: 3px;
+                 overflow: visible;
+             }
+             div.three {
+                 border: 1px solid gray;
+                 width: 40%;
+                 height: 52px;
+                 text-align: justify;
+                 margin-left: 10px;
+                 padding: 3px;
+                 background-color: lightgray;
+                 overflow: hidden;
              }
          </style>
      </head>
@@ -36,6 +56,29 @@
              facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil 
              imperdiet doming id quod mazim placerat facer possim assum. Typi non habent 
              claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <p>By default, the overflow is visible,meaning that it is not clipped and it renders
+             outside the element's box:
+         </p>
+         <div class="two">
+             You can use the overflow property when you want to have better control of the 
+             layout. The overflow property specifies what happens if content overflows an 
+             element's box.
+         </div>
+
+         <br><br><br><br><hr size="5" noshade><br>
+
+         <p>With the hidden value, the overflow is clipped, and the rest of the content is
+             hidden:
+         </p>
+         <p>Try to remove the overflow property to understand how it works.</p>
+         <div class="three">
+             You can use the overflow property when you want to have better control of the 
+             layout. The overflow property specifies what happens if content overflows an 
+             element's box.
          </div>
      </body>
  </html>
