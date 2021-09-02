@@ -56,8 +56,33 @@
                  padding: 20px 60px;
                  text-align: center;
              }
+             .ten {
+                 float: left;
+                 background-color: skyblue;
+                 padding: 20px 60px;
+                 border: 3px solid orangered;
+             }
+             .eleven {
+                 background-color: lightcoral;
+                 padding: 20px 60px;
+                 border: 5px solid magenta;
+             }
+             .twelve {
+                 float: left;
+                 background-color: skyblue;
+                 padding: 20px 60px;
+                 border: 3px solid orangered;
+             }
+             .thirteen {
+                 clear: left;
+                 background-color: lightcoral;
+                 padding: 20px 60px;
+                 border: 5px solid magenta;
+             }
          </style>
      </head>
+     <!--=============================================================================================================================================================
+     ===============================================================================================================================================================-->
      <body>
          <h2>Float Right</h2>
          <p>In this example, the image will float to the right in the paragraph, and the 
@@ -183,5 +208,21 @@
          <div class="nine">Div3</div>
 
          <br><br><br><br><hr size="5" noshade><br>
+
+         <h2>Without clear</h2>
+         <div class="ten">Div 1</div>
+         <div class="eleven">
+             Div2 - Notice that Div2 is after Div1 in the HTML code. However, since Div1 
+             floats to the left, the text in Div2 flows around Div1.
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <h2>With clear</h2>
+         <div class="twelve">Div 1</div>
+         <div class="thirteen">
+             Div2 - Notice that Div2 is after Div1 in the HTML code. However, since Div1 
+             floats to the left, the text in Div2 flows around Div1.
+         </div>
      </body>
  </html>
