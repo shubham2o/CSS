@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>DISPLAY</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             li.one {
+                 display: inline;
+                 margin-left: 20px;
+             }
+             span.two {
+                 display: block;
+             }
+             a.three {
+                 display: block;
+             }
+             h1.four {
+                 display: none;
+             }
+             h1.five {
+                 visibility: hidden;
+             }
+         </style>
+     </head>
+     <body>
+         <h1>Display a list of links as a horizontal menu:</h1>
+         <li class="one"><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+         </li>
+         <li class="one"><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
+         </li>
+         <li class="one"><a href="https://www.w3schools.com/js/default.asp" target="_blank">JAVASCRIPT</a>
+         </li>
+
+         <br><br><hr size="5" noshade><br>
+
+         <span class="two">A display property with a value of "block" results in</span>
+         <span class="two"> a line break between the two elements.</span>
+
+         <br><br><hr size="5" noshade><br>
+
+         <h1>Display links as block elements:</h1>
+         <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="three">HTML</a>
+         </li>
+         <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="three">CSS</a>
+         </li>
+         <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="three">JAVASCRIPT</a>
+         </li>
+
+         <br><br><hr size="5" noshade><br>
+
+         <h1>This is a visible heading</h1>
+         <!------------------------------------------
+         ---------------DISPLAY NONE-----------------
+         ------------------------------------------->
+         <h1 class="four">This is a hidden heading</h1>
+         <p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+         <br><br><hr size="5" noshade><br>
+
+         <!------------------------------------------
+         ------------VISIBILITY HIDDEN---------------
+         ------------------------------------------->
+         <h1>This is a visible heading</h1>
+         <h1 class="five">This is a hidden heading</h1>
+         <p>Notice that the h1 element with visiblity: hidden; still takes up any space.</p>
+     </body>
+ </html>
