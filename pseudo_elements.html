@@ -30,6 +30,15 @@
              }
              h1.six::after {
                  content: url('img_submit.gif')
+             }
+             li.seven::marker {
+                 color: orangered;
+                 font-size: 25px;
+             }
+             .eight::selection {
+                 color: red;
+                 background-color: yellow;
+             }
          </style>
      </head>
      <!--==========================================================================================================================================================================================
@@ -91,5 +100,34 @@
          <p>The ::after pseudo-element inserts content after the content of an element.
          </p>
          <h1 class="six">This is a heading</h1>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <ul>
+             <li class="seven">Coffee</li>
+             <li class="seven">Tea</li>
+             <li class="seven">Milk</li>
+         </ul>
+         <ol>
+             <li class="seven">First</li>
+             <li class="seven">Second</li>
+             <li class="seven">Third</li>
+         </ol>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <div>
+             <h1 class="eight">Select some text on this page:</h1>
+             <p class="eight">This is a paragraph.</p>
+             <p class="eight">This is some text in a div element.</p>
+             <p class="eight">
+                 <strong class="eight">Note:</strong> 
+                 Firefox supports an alternative, the ::-moz-selection property.
+             </p>
+         </div>
      </body>
  </html>
