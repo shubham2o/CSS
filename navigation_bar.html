@@ -57,6 +57,30 @@
                  background-color: black;
                  color: white;
              }
+             ul.nine {
+                 list-style-type: none;
+                 margin: 0px;
+                 padding: 0px;
+                 background-color: lightgray;
+                 width: 25px;
+                 height: 100%;
+                 position: fixed;
+                 overflow: auto;
+             }
+             a.ten {
+                 padding: 8px 16px;
+                 display: block;
+                 text-decoration: none;
+                 color: black;
+             }
+             a.eleven {
+                 background-color: green;
+                 color: white;
+             }
+             a.ten:hover:not(.eleven) {
+                 background-color: black;
+                 color: white;
+             }
          </style>
      </head>
      <!--================================================================================================================================================================================================
@@ -160,5 +184,43 @@
                  <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="seven">About</a>
              </li>
          </ul>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <ul class="nine">
+             <li>
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="ten eleven" target="_blank">Home</a>
+             </li>
+             <li> 
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="ten">News</a>
+             </li>
+             <li>
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="ten">Contact</a>
+             </li>
+             <li>
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="ten">About</a>
+             </li>
+         </ul>
+         <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+             <h2>Fixed Full-height Side Nav</h2>
+             <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+             <p>Notice that this div element has a left margin of 25%. This is because the 
+                 side navigation is set to 25% width. If you remove the margin, the sidenav 
+                 will overlay/sit on top of this div.
+             </p>
+             <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar 
+                 when the sidenav is too long (for example if it has over 50 links inside of 
+                 it).
+             </p>
+             <p>Some text..</p>
+             <p>Some text..</p>
+             <p>Some text..</p>
+             <p>Some text..</p>
+             <p>Some text..</p>
+             <p>Some text..</p>
+             <p>Some text..</p>
+         </div>
      </body>
  </html>
