@@ -8,8 +8,13 @@
              div.one p {
                  background-color: yellow;
              }
+             div.two > p {
+                 background-color: yellow;
+             }
          </style>
      </head>
+     <!--===================================================================================================================================================================
+         ================================================================================================================================================================-->    
      <body>
          <h1>Descendant Selector (SPACE)</h1>
          <p>The descendant selector matches all elements that are descendants of a specified
@@ -18,11 +23,35 @@
          <div class="one"> 
              <p>Paragraph 1 in the div.</p>
              <p>Paragraph 2 in the div.</p>
-             <p>Paragraph 3 in the div.</p>
+             <section>
+                 <p>Paragraph 3 in the div.</p>
+             </section>
          </div>
          <p>Paragraph 4. Not in a div.</p>
          <p>Paragraph 5. Not in a div.</p>
 
+         <br>
+         <hr size="5" noshade>
+         <br>
+        
+         <h1>Child Selectors (>)</h1>
+         <p>The child selector(>) selects all elements that are the children of a specified
+             element.
+         </p>
+         <div class="two">
+             <p>Paragraph 1 in the div.</p>
+             <p>Paragraph 2 in the div.</p>
+             <section>                           <!--=====NOT CHILD BUT DESCENDANT====-->
+                 <p>Paragraph 3 in the div.</p>
+             </section>
+             <p>Paragraph 4 in the div.</p>
+         </div>
+         <p>Paragraph 5. Not in a div.</p>
+         <p>Paragraph 6. Not in a div.</p>
+
          <br><hr size="5" noshade><br>
+
+         <h1>Adjacent Sibling Selector (+)</h1>
+         
      </body>
  </html>
