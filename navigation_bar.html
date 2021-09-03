@@ -17,6 +17,46 @@
                  background-color: lightgray;
                  width:55px;
              }
+             ul.three {
+                 list-style-type: none;
+                 padding: 0px;
+                 margin: 0px;
+                 background-color: lightgray;
+                 width:200px;
+             }
+             a.four {
+                 text-decoration: none;
+                 display: block;
+                 color: black;
+                 padding:8px 16px;
+             }
+             a.five:hover {
+                 background-color: black;
+                 color: white;
+             }
+             .six {
+                 list-style-type: none;
+                 margin: 0px;
+                 padding: 0px;
+                 background-color: lightgray;
+                 width: 200px;
+             }
+             a.seven {
+                 padding: 8px 16px;
+                 display: block;
+                 text-decoration: none;
+                 color: black;
+                 text-align: center;
+                 border: 1px solid black;
+             }
+             a.eight {
+                 background-color: green;
+                 color: white;
+             }
+             a.seven:hover:not(.eight) {
+                 background-color: black;
+                 color: white;
+             }
          </style>
      </head>
      <!--================================================================================================================================================================================================
@@ -77,5 +117,48 @@
          </ul>
          <p>A background color is added to the links to show the link area.</p>
          <p>Notice that the whole link area is clickable, not just the text.</p>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>Vertical Navigation Bar</h1>
+         <ul class="three">
+             <li>
+                 <a href="#Home" class="four five">Home</a>
+             </li>
+             <li>
+                 <a href="#News" class="four five">News</a>
+             </li>
+             <li>
+                 <a href="#Contact" class="four five">Contact</a>
+             </li>
+             <li>
+                 <a href="#About" class="four five">About</a>
+             </li>
+         </ul>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>Vertical Navigation Bar</h1>
+         <p>In this example, we create an "active" class with a green background color and
+             a white text. The class is added to the "Home" link.
+         </p>
+         <ul class="six">
+             <li>
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="seven eight" target="_blank">Home</a>
+             </li>
+             <li> 
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="seven">News</a>
+             </li>
+             <li>
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="seven">Contact</a>
+             </li>
+             <li>
+                 <a href="https://www.w3schools.com/css/css_navbar_vertical.asp" class="seven">About</a>
+             </li>
+         </ul>
      </body>
  </html>
