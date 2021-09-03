@@ -14,6 +14,9 @@
              div.three + p {
                  background-color: yellow;
              }
+             div.four ~ p {
+                 background-color: yellow;
+             }
          </style>
      </head>
      <!--===================================================================================================================================================================
@@ -78,6 +81,31 @@
          <hr size="5" noshade>
          <br>
 
-         
+         <h1>General Sibling Selector (~)</h1>
+         <p>The general sibling selector(~) selects all elements that are next siblings
+             of a specified element.
+         </p>
+         <p>Paragraph 1.</p>
+         <div class="four">
+             <p>Paragraph 2.</p>
+         </div>
+         <p>Paragraph 3.</p>
+         <code>Some code.</code>
+         <p>Paragraph 5.</p>
+         <p>Paragraph 6.</p>
+         <p>Paragraph 7.</p>
+         <div class="four">
+             <code>Some code.</code>
+         </div>
+         <p>Paragraph 8.</p>
+         <code>Some code.</code>
+         <br>
+         <code>Some code.</code>
+         <p>Paragraph 9.</p>
+        
+         <br>
+         <hr size="5" noshade>
+         <br>
+
      </body>
  </html>
