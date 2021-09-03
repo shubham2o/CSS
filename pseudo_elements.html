@@ -9,6 +9,25 @@
                  color:red;
                  font-variant: small-caps;
              }
+             p.two::first-letter {
+                 color: red;
+                 font-size: 40px;
+             }
+             p.three::first-letter {
+                 color: red;
+                 font-size: 40px;
+             }
+             p.four::first-letter {
+                 color: red;
+                 font-size: xx-large;
+             }
+             p.four::first-line {
+                 color: blue;
+                 font-variant: small-caps;
+             }
+             h1.five::before {
+                 content: url('img_submit.gif');
+             }
          </style>
      </head>
      <!--==========================================================================================================================================================================================
@@ -23,6 +42,42 @@
              more, and more, and more.You can use the ::first-line pseudo-element to add a 
              special effect to the first line of a text. Some more text. And even more, and 
              more, and more, and more, and more, and more, and more, and more, and more, and 
-             more, and more, and more.</p>
+             more, and more, and more.
+         </p>
+        
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <p class="two">
+             You can use the ::first-letter pseudo-element to add a special effect to the 
+             first character of a text!
+         </p>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <p class="three">
+             This is an introduction.
+         </p>
+         <p>This is a paragraph with some text. A bit more text even.</p>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <p class="four">You can combine the ::first-letter and ::first-line pseudo-elements 
+             to add a special effect to the first letter and the first line of a text!
+         </p>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1 class="five">This is a heading</h1>
+         <p>The ::before pseudo-element inserts content before the content of an element.
+         </p>
+         <h1 class="five">This is a heading</h1>
      </body>
  </html>
