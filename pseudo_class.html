@@ -18,6 +18,28 @@
              a.one:active {
                  color: red;
              }
+             div.two {
+                 background-color: green;
+                 color: white;
+                 padding: 30px;
+                 text-align: center;
+             }
+             div.two:hover {
+                 background-color: blue;
+             }
+             p.three {
+                 display: none;
+                 padding: 20px;
+                 background-color: yellow;
+             }
+             div.four:hover  p.three 
+             {
+                 display: block;
+             }
+             div.five:first-child p 
+             {
+                 color: navy;
+             }
          </style>
      </head>
      <!--=================================================================================================================================================================================
@@ -34,5 +56,35 @@
          <p><b>Note:</b> 
              a:active MUST come after a:hover in the CSS definition in order to be effective.
          </p>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h3>Mouse over the div element below to change its background color:
+         </h3>
+         <div class="two">
+             Mouse Over Me
+         </div>
+
+         <br>
+         <hr size="5"noshade>
+         <br>
+
+         <div class="four"> 
+             Hover over me to show the p element
+             <p class="three">
+                 Tada! Here I am!
+             </p>
+         </div>
+
+         <br>
+         <hr size="5"noshade>
+         <br>
+
+         <div class="five">
+             <p>This is some text.</p>
+             <p>This is some text.</p>
+         </div>
      </body>
  </html>
