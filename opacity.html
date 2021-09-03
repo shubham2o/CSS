@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>OPACITY</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             img.one {
+                 opacity: 0.5;
+             }
+             img.two:hover {
+                 opacity: 1.0;
+             }
+             img.three {
+                 opacity: 1.0;
+             }
+             img.four:hover {
+                 opacity: 0.5;
+             }
+             div.five {
+                 background : url("img_5terre.jpg") repeat;
+                 border: 3px solid black;
+                 padding: 20px;
+             }
+             div.six {
+                 margin: 20px;
+                 border: 1px solid black;
+                 padding: 20px;
+                 color: black;
+                 font: 25px bolder;
+                 opacity: 0.5;
+                 background-color: lightblue;
+             }
+         </style>
+     </head>
+     <!--==========================================================================================================================================================================================================================
+     ===========================================================================================================================================================================================================================-->
+     <body>
+         <h1>Image Transparency</h1>
+         <p>The opacity property is often used together with the :hover selector to change
+             the opacity on mouse-over:
+         </p>
+         <img src="img_forest.jpg" alt="Forest" width="170" height="100" class="one two">
+         <img src="img_mountains.jpg" alt="Mountains" width="170" height="100" class="one two">
+         <img src="img_5terre.jpg" alt="Beach" width="170" height="100" class="one two">
+
+         <br><br><br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>Image Transparency</h1>
+         <p>The opacity property is often used together with the :hover selector to change
+             the opacity on mouse-over:
+         </p>
+         <img src="img_forest.jpg" alt="Forest" width="170" height="100" class="three four">
+         <img src="img_mountains.jpg" alt="Mountains" width="170" height="100" class="three four">
+         <img src="img_5terre.jpg" alt="Beach" width="170" height="100" class="three four">
+
+         <br><br><br>
+         <hr size="5" noshade>
+         <br>
+
+         <div class="five">
+             <div class="six">
+                 This is some text that is placed in the transparent box.
+             </div>
+         </div>
+     </body>
+ </html>
