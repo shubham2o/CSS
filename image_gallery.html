@@ -4,14 +4,81 @@
          <title>IMAGE GALLERY</title>
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
-         <s
+         <style>
+             div.one {
+                 border: 1px solid lightgray;
+                 padding: 0px;
+                 margin: 10px;
+                 width: 200px;
+                 float: left;
+             }
+             div.one:hover {
+                 border: 1px solid black;
+             }
+             img.two {
+                 width: 100%;
+                 height: auto;
+             }
+             div.three {
+                 padding: 20px 5px;
+                 text-align: center;
+             }
+             div.four {
+               padding: 10px;
+               text-align: justify;
+               float: left;
+             }
+             @media only screen and (max-width: 700px) {
+                 .responsive {
+                 width: 49.99999%;
+                 margin: 6px 0;
+                 }
+             }
+             @media only screen and (max-width: 500px) {
+                 .responsive {
+                 width: 100%;
+                 }
+             }
          </style>
      </head>
      <!--=======================================================================================================================================================================
      ========================================================================================================================================================================-->
      <body>
-         <div class="">
-             <a href="img_5terre.jpg"></a><img src="img_5terre.jpg" width="300px" height="200px">
+         <div class="responsive">
+             <div class="one">
+                 <a href="img_5terre.jpg" target="_blank">
+                     <img src="img_5terre.jpg" width="200" height="240" class="two">
+                 </a>
+                 <div class="three">Add a description of the image here</div>
+             </div>
+             <div class="one">
+                 <a href="img_forest.jpg" target="_blank">
+                     <img src="img_forest.jpg" width="200" height="240" class="two">
+                 </a>
+                 <div class="three">Add a description of the image here</div>
+             </div>
+             <div class="one">
+                 <a href="img_lights.jpg" target="_blank">
+                     <img src="img_lights.jpg" width="200px" height="240px" class="two">
+                 </a>
+                 <div class="three">Add a description of the image here</div>
+             </div>
+             <div class="one">
+                 <a href="img_mountains.jpg" target="_blank">
+                     <img src="img_mountains.jpg" width="200px" height="240px" class="two">
+                 </a>
+                 <div class="three">Add a description of the image here</div>
+             </div>
+         </div>
+         <div class="four">
+             <p>This example use media queries to re-arrange the images on different screen 
+                 sizes: for screens larger than 700px wide, it will show four images side by 
+                 side, for screens smaller than 700px, it will show two images side by side. 
+                 For screens smaller than 500px, the images will stack vertically (100%).
+             </p>
+             <p>You will learn more about media queries and responsive web design later in our 
+                 CSS Tutorial.
+             </p>
          </div>
      </body>
  </html>
