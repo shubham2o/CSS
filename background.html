@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>BACKGROUND</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             #one {
+                 background-image: url("img_tree.png"),url("border.png");
+                 background-position: right bottom, top left;
+                 background-repeat: no-repeat, repeat;
+                 padding: 25px;
+             }
+             #two {
+                 color: mediumblue;
+                 font-size: 22px;
+             }
+             #three {
+                 background: url("img_tree.png") right bottom no-repeat, 
+                             url("border.png") left top repeat;
+                 padding: 25px;
+             }
+         </style>
+     </head>
+     <body>
+         <h1>Multiple Backgrounds</h1>
+         <p>The following div element has two background images:</p>
+         <div id="one">
+             <h1>Lorem Ipsum Dolor</h1>
+             <p id="two">
+             <strong>ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+             </p>
+             <p id="two">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+                 suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+             </strong>
+             </p>
+         </div>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>Using Shorthand Property</h1>
+         <div id="three">
+             <h1>Lorem Ipsum Dolor</h1>
+             <p id="two">
+             <strong>ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+             </p>
+             <p id="two">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+                 suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+             </strong>
+             </p>
+         </div>
+     </body>
+ </html>
