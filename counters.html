@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>COUNTERS</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             div.one {
+                 counter-reset: chapter;
+             }
+             h2::before {
+                 counter-increment: chapter;
+                 content: "Chapter "counter(chapter)": ";
+             }
+             div.two {
+                 counter-reset: section;
+             }
+             h1.two {
+                 counter-reset: subsection;
+             }
+             h1.two::before {
+                 counter-increment: section;
+                 content: "Section " counter(section) ". ";
+             }
+             h2.two::before {
+             counter-increment: subsection;
+             content: counter(section) "." counter(subsection) " ";
+             }
+         </style>
+     </head>
+     <body>
+         <div class="one">
+             <h1>using CSS Counters:</h1>
+             <h2>HTML</h2>
+             <h2>CSS</h2>
+             <h2>Javascript</h2>
+         </div>
+
+         <br><hr size="5" noshade><br>
+
+         <div class="two">
+             <h1 class="two">HTML tutorials:</h1>
+             <h2 class="two">HTML Tutorial</h2>
+             <h2 class="two">CSS Tutorial</h2>
+             <h1 class="two">Scripting tutorials:</h1>
+             <h2 class="two">JavaScript</h2>
+             <h2 class="two">VBScript</h2>
+             <h1 class="two">XML tutorials:</h1>
+             <h2 class="two">XML</h2>
+             <h2 class="two">XSL</h2>
+         </div>
+     </body>
+ </html>
