@@ -17,6 +17,15 @@
              div.four a[title|="W3"] {
                  background-color: yellow;
              }
+             div.five a[title^="o"] {
+                 background-color: yellow;
+             }
+             div.six a[title$="z"] {
+                 background-color: yellow;
+             }
+             div.seven a[title*="o"] {
+                 background-color: yellow;
+             }
          </style>
      </head>
      <!--==============================================================================================================================================================================================================================
@@ -64,6 +73,39 @@
              <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" title="W3-Schools">w3schools.com</a>
              <a href="https://github.com/" target="_blank" title="Github">github.com</a>
              <a href="https://codedamn.com/" target="_top" title="Code damn">codedamn.com</a>
+         </div>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>CSS [attribute^="value"] Selector</h1>
+         <div class="five">
+             <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" title="o W3Schools">w3schools.com</a>
+             <a href="https://github.com/" target="_blank" title="Github">github.com</a>
+             <a href="https://codedamn.com/" target="_top" title="oCode damn">codedamn.com</a>
+         </div>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>CSS [attribute$="value"] Selector</h1>
+         <div class="six">
+             <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" title="o W3Schools">w3schools.com</a>
+             <a href="https://github.com/" target="_blank" title="Githubz">github.com</a>
+             <a href="https://codedamn.com/" target="_top" title="oCode damn-z">codedamn.com</a>
+         </div>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>CSS [attribute*="value"] Selector</h1>
+         <div class="seven">
+             <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" title="o_W3Schools">w3schools.com</a>
+             <a href="https://github.com/" target="_blank" title="Githubz">github.com</a>
+             <a href="https://codedamn.com/" target="_top" title="Codeodamn-z">codedamn.com</a>
          </div>
      </body>
  </html>
