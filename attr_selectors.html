@@ -11,12 +11,16 @@
              div.two a[target="_blank"] {
                  background-color: yellow;
              }
-             div.three a[title~=damn]
-             {
+             div.three a[title~="damn"] {
+                 background-color: yellow;
+             }
+             div.four a[title|="W3"] {
                  background-color: yellow;
              }
          </style>
      </head>
+     <!--==============================================================================================================================================================================================================================
+     ===============================================================================================================================================================================================================================-->
      <body>
          <h1>CSS [attribute] Selector</h1>
          <p>The links with a target  attribute gets a yellow background:</p>
@@ -47,6 +51,17 @@
              border.</p>
          <div class="three">
              <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" title="W3Schools">w3schools.com</a>
+             <a href="https://github.com/" target="_blank" title="Github">github.com</a>
+             <a href="https://codedamn.com/" target="_top" title="Code damn">codedamn.com</a>
+         </div>
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+         <h1>CSS [attribute|="value"] Selector</h1>
+         <div class="four">
+             <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute" title="W3-Schools">w3schools.com</a>
              <a href="https://github.com/" target="_blank" title="Github">github.com</a>
              <a href="https://codedamn.com/" target="_top" title="Code damn">codedamn.com</a>
          </div>
