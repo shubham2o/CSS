@@ -75,6 +75,17 @@
                  width: 500px;
                  height: 350px;
              }
+             div.eight {
+                 background-color: blueviolet;
+                 height: 100px;
+                 width: 100px;
+                 margin-left: 10px;
+                 transition: width 1s;
+                 transition-delay: 2s;
+             }
+             div.eight:hover {
+                 width: 500px;
+             }
          </style>
      </head>
      <!--====================================================================================================================================================================================================================================
@@ -118,5 +129,18 @@
          <br>
          <div class="seven">ease-in-out</div>
          <br>
+
+        
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>The transition-delay Property</h1>
+         <p>Hover over the div element below, to see the transition effect:</p>
+         <div class="eight"></div>
+         <p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+         <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
+             versions.</p>
      </body>
  </html>
