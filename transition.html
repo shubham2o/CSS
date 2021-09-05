@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>TRANSITION</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             body {
+                 box-sizing: border-box;
+             }
+             div.one {
+                 background-color: red;
+                 width: 100px;
+                 height: 100px;
+                 margin-left: 10px;
+                 transition: width 2s;
+             }
+             div.one:hover {
+                 width: 500px;
+             }
+         </style>
+     </head>
+     <body>
+         <h1>The transition Property</h1>
+         <p>Hover over the div element below, to see the transition effect:</p>
+         <div class="one"></div>
+         <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
+             versions.</p>
+     </body>
+ </html>
