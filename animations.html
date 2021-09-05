@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>ANIMATIONS</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             body {
+                 box-sizing: border-box;
+             }
+             div.one {
+                 background-color: red;
+                 width: 100px;
+                 height: 100px;
+                 margin-left: 10px;
+                 animation-name: colorchange;
+                 animation-duration: 5s;
+             }
+             @keyframes colorchange {
+                 from {
+                     background-color: red;
+                 }
+                 to {
+                     background-color: aqua;
+                 }
+             }
+         </style>
+     </head>
+     <!---==================================================================================================================================================================================================================================
+     ====================================================================================================================================================================================================================================-->
+     <body>
+         <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
+             versions.
+         </p>
+         <div class="one"></div>
+         <p><b>Note:</b> When an animation is finished, it changes back to its original 
+             style.
+         </p>
+     </body>
+ </html>
