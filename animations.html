@@ -24,6 +24,28 @@
                      background-color: aqua;
                  }
              }
+             div.two {
+                 background-color: red;
+                 width: 100px;
+                 height: 100px;
+                 margin-left: 10px;
+                 animation-name: usingpercent;
+                 animation-duration: 6s;
+             }
+             @keyframes usingpercent {
+                 0% {
+                     background-color: red;
+                 }
+                 25% {
+                     background-color: yellow;
+                 }
+                 50% {
+                     background-color: blue;
+                 }
+                 100% {
+                     background-color: green;
+                 }
+             }
          </style>
      </head>
      <!---==================================================================================================================================================================================================================================
@@ -36,5 +58,16 @@
          <p><b>Note:</b> When an animation is finished, it changes back to its original 
              style.
          </p>
+
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
+             versions.
+         </p>
+         <div class="two"></div>
      </body>
  </html>
