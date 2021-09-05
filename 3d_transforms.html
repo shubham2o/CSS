@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>3D TRANSFORMS</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             body {
+                 box-sizing: border-box;
+             }
+             div.one {
+                 border: 5px solid black;
+                 background-color: yellow;
+                 padding: 3px;
+                 margin-left: 15px;
+                 width: 200px;
+                 height: 120px;
+             }
+             div.two {
+                 background-color: yellow;
+                 border: 5px solid black;
+                 padding: 3px;
+                 margin-left: 15px;
+                 width: 200px;
+                 height: 120px;
+                 transform: rotateX(150deg);
+               }
+               div.three {
+                 background-color: yellow;
+                 border: 5px solid black;
+                 padding: 3px;
+                 margin-left: 15px;
+                 width: 200px;
+                 height: 120px;
+                 transform: rotatey(150deg);
+               }
+         </style>
+     </head>
+     <body>
+         <h1>The rotateX() Method</h1>
+         <p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
+         <div class="one">
+             This is a normal div element.
+         </div>
+         <div class="two">
+             This is a rotated div element.
+         </div>
+         <p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the 
+             rotateX() method.</p>
+
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>The rotateY() Method</h1>
+         <p>The rotateY() method rotates an element around its Y-axis at a given degree.</p>
+         <div class="one">
+             This a normal div element.
+         </div>
+         <div class="three">
+             This div element is rotated 150 degrees.
+         </div>
+         <p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the 
+             rotateY() method.</p>
+     </body>
+ </html>
