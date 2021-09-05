@@ -14,7 +14,7 @@
                  height: 100px;
                  margin-left: 10px;
                  animation-name: colorchange;
-                 animation-duration: 5s;
+                 animation-duration: 10s;
              }
              @keyframes colorchange {
                  from {
@@ -30,7 +30,7 @@
                  height: 100px;
                  margin-left: 10px;
                  animation-name: usingpercent;
-                 animation-duration: 6s;
+                 animation-duration: 10s;
              }
              @keyframes usingpercent {
                  0% {
@@ -44,6 +44,42 @@
                  }
                  100% {
                      background-color: green;
+                 }
+             }
+             div.three {
+                 background-color: red;
+                 margin-left: 10px;
+                 width: 100px;
+                 height: 100px;
+                 position: relative;
+                 animation-name: changeposition;
+                 animation-duration: 10s;
+             }
+             @keyframes changeposition {
+                 0% {
+                     background-color: red;
+                     left: 0px;
+                     top: 0px;
+                 }
+                 25% {
+                     background-color: yellow;
+                     left: 200px;
+                     top: 0px;
+                 } 
+                 50% {
+                     background-color: blue;
+                     left: 200px;
+                     top: 200px;
+                 } 
+                 75% {
+                     background-color: magenta;
+                     left: 0px;
+                     top: 200px;
+                 }
+                 100% {
+                     background-color: green;
+                     left: 0px;
+                     top: 0px;
                  }
              }
          </style>
@@ -69,5 +105,16 @@
              versions.
          </p>
          <div class="two"></div>
+
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
+             versions.
+         </p>
+         <div class="three"></div>
      </body>
  </html>
