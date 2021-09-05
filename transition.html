@@ -29,6 +29,52 @@
                  width: 500px;
                  height: 350px;
              }
+             div.three,
+             div.four,
+             div.five,
+             div.six,
+             div.seven {
+                 background-color: yellowgreen;
+                 margin-left: 10px;
+                 width: 100px;
+                 height: 100px;
+                 transition: width 2s, height 4s;
+             }
+             div.three {
+                 transition-timing-function: linear;
+             }
+             div.three:hover {
+                 width: 500px;
+                 height: 350px;
+             }
+             div.four {
+                 transition-timing-function: ease;
+             }
+             div.four:hover {
+                 width: 500px;
+                 height: 350px;
+             }
+             div.five {
+                 transition-timing-function: ease-in;
+             }
+             div.five:hover {
+                 width: 500px;
+                 height: 350px;
+             }
+             div.six {
+                 transition-timing-function: ease-out;
+             }
+             div.six:hover {
+                 width: 500px;
+                 height: 350px;
+             }
+             div.seven {
+                 transition-timing-function: ease-in-out;
+             }
+             div.seven:hover {
+                 width: 500px;
+                 height: 350px;
+             }
          </style>
      </head>
      <!--====================================================================================================================================================================================================================================
@@ -53,5 +99,24 @@
          <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
              versions.
          </p>
+
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>the transition-timing-function Property</h1>
+         <p>Hover over the div element below, to see the different speed curves:</p>
+         <div class="three">linear</div>
+         <br>
+         <div class="four">ease</div>
+         <br>
+         <div class="five">ease-in</div>
+         <br>
+         <div class="six">ease-out</div>
+         <br>
+         <div class="seven">ease-in-out</div>
+         <br>
      </body>
  </html>
