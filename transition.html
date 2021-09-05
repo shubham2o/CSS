@@ -86,6 +86,19 @@
              div.eight:hover {
                  width: 500px;
              }
+             div.nine {
+                 background-color: red;
+                 margin-left: 15px;
+                 width: 100px;
+                 height: 100px;
+                 transition: width 2s, height 2s, transform 1s;
+                 transition-delay: 1s;
+             }
+             div.nine:hover {
+                 width: 350px;
+                 height: 350px;
+                 transform: rotate(180deg);
+             }
          </style>
      </head>
      <!--====================================================================================================================================================================================================================================
@@ -142,5 +155,23 @@
          <p><b>Note:</b> The transition effect has a 2 second delay before starting.</p>
          <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
              versions.</p>
+
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Transition + Transform</h1>
+         <p>Hover over the div element below:</p>
+         <div class="nine"></div>
+         <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
+             versions.
+         </p>
+
+
+         <br><br>
+         <br><br>
+         <br><br>
      </body>
  </html>
