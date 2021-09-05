@@ -83,6 +83,43 @@
                      top: 0px;
                  }
              }
+             div.four {
+                 background-color: red;
+                 margin-left: 10px;
+                 width: 100px;
+                 height: 100px;
+                 position: relative;
+                 animation-name: count;
+                 animation-duration: 3s;
+                 animation-delay: 3s;
+                 animation-iteration-count: 3;
+             }
+             @keyframes count {
+                 0% {
+                     background-color: red;
+                     left: 0px;
+                     top: 0px;
+                 }
+                 25% {
+                     background-color: yellow;
+                     left: 200px;
+                     top: 0px;
+                 } 
+                 50% {
+                     background-color: blue;
+                     left: 200px;
+                     top: 200px;
+                 } 
+                 75% {
+                     background-color: magenta;
+                     left: 0px;
+                     top: 200px;
+                 }
+                 100% {
+                     background-color: green;
+                     left: 0px;
+                     top: 0px;
+                 }
          </style>
      </head>
      <!---==================================================================================================================================================================================================================================
@@ -117,5 +154,16 @@
              versions.
          </p>
          <div class="three"></div>
+
+
+         <br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier 
+             versions.
+         </p>
+         <div class="four"></div>
      </body>
  </html>
