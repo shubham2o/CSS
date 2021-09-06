@@ -15,13 +15,35 @@
                  height: 300px;
                  object-fit: contain;
              }
+             .three {
+                 width: 200px;
+                 width: 300px;
+                 object-fit: fill;
+             }
+             .four {
+                 width: 200px;
+                 height: 300px;
+                 object-fit: none;
+             }
+             .five {
+                 width: 200px;
+                 height: 300px;
+                 object-fit: scale-down;
+             }
+             .six {
+                 object-fit: cover;
+             }
+             .seven {
+                 width: 100%;
+                 height: 400px;
+             }
          </style>
      </head>
       <!--================================================================================================================================================================================================
      ====================================================================================================================================================================================================-->
      <body>
          <h1>Using object-fit: cover;</h1>
-         <img class="one" src="paris.jpg" alt="Paris">
+         <img class="one" src="paris.jpg" width="400px" height="300px" alt="Paris">
 
 
          <br><br>
@@ -30,6 +52,47 @@
 
 
          <h1>Using object-fit: contain;</h1>
-         <img class="two" src="paris.jpg">
+         <img class="two" width="400px" height="300px" src="paris.jpg">
+
+
+         <br><br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Using object-fit: fill;</h1>
+         <img class="three" width="400px" height="300px" src="paris.jpg">
+
+
+         <br><br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Using object-fit: none;</h1>
+         <img class="four" width="400px" height="300px" src="paris.jpg">
+
+
+         <br><br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Using object-fit: scale-down;</h1>
+         <img class="five" width="400px" height="300px" src="paris.jpg">
+
+
+         <br><br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Using object-fit:</h1>
+         <p>Here we use "object-fit: cover;", so when we resize the browser window, 
+             the aspect ratio of the images is preserved:</p>
+         <div class="seven">
+             <img class="six" width="50%" height="100%" src="rock600x400.jpg" style="float: left;">
+             <img class="six" width="50%" height="100%" src="paris.jpg">
+         </div>
      </body>
  </html>
