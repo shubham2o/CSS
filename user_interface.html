@@ -5,6 +5,9 @@
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <style>
+             body {
+                 box-sizing: border-box;
+             }
              .one {
                  border: 2px solid black;
                  padding: 20px;
@@ -31,6 +34,18 @@
                  overflow: auto;
                  resize: both;
              }
+             .four {
+                 outline: 4px solid red;
+                 border: 1px solid black;
+                 outline-offset: 15px;
+                 margin: 20px;
+             }
+             .five {
+                 outline: 5px dashed blue;
+                 outline-offset: 5px;
+                 border: 1px solid black;
+                 margin: 10px;
+             }
          </style>
      </head>
      <!--=================================================================================================================================================
@@ -39,7 +54,9 @@
          <h1>The resize Property</h1>
          <div class="one">
              <p>Let the user resize only the width of this div element.</p>
-             <p>To resize: Click and drag the bottom right corner of this div element.</p>
+             <p>To resize: Click and drag the bottom right corner of this 
+                 div element.
+             </p>
          </div>
 
         
@@ -51,7 +68,9 @@
          <h1>The resize Property</h1>
          <div class="two">
              <p>Let the user resize only the height of this div element.</p>
-             <p>To resize: Click and drag the bottom right corner of this div element.</p>
+             <p>To resize: Click and drag the bottom right corner of 
+                 this div element.
+             </p>
          </div>
 
 
@@ -63,7 +82,9 @@
          <h1>The resize Property</h1>
          <div class="three">
              <p>Let the user resize only the height of this div element.</p>
-             <p>To resize: Click and drag the bottom right corner of this div element.</p>
+             <p>To resize: Click and drag the bottom right corner of this 
+                 div element.
+             </p>
          </div>
 
 
@@ -72,10 +93,13 @@
          <br>
 
 
-         <h1>The resize Property</h1>
-         <div class="two">
-             <p>Let the user resize only the height of this div element.</p>
-             <p>To resize: Click and drag the bottom right corner of this div element.</p>
+         <h1>The outline-offset Property</h1>
+         <div class="four">This div has a 4 pixels solid red outline 15 
+             pixels outside the border edge.
+         </div>
+         <br><br><br>
+         <div class="five">This div has a 5 pixels dashed blue outline 5 
+             pixels outside the border edge.
          </div>
      </body>
  </html>
