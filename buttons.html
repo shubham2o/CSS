@@ -8,15 +8,49 @@
              body {
                  box-sizing: border-box;
              }
-             
+             .one {
+                 background-color: orangered;
+                 padding: 25px;
+                 width: 200px;
+                 text-align: center;
+                 font-size: 28px;
+                 border-radius: 8px;
+                 border: 1px solid orangered;
+                 margin-left: 10px;
+                 color: white;
+                 display: inline-block;
+                 transition: all 0.5s;
+                 cursor: pointer;
+             }
+             .two {
+                 cursor: pointer;
+                 position: relative;
+                 display: inline-block;
+                 transition: 0.5s;
+             }
+             .two:after {
+                 content: "\00bb";
+                 position: absolute;
+                 opacity: 0;
+                 top: 0;
+                 right: -300px;
+                 transform: 0.5s;
+             }
+             .one:hover .two{
+                 padding-right: 25px;
+             }
+             .one:hover .two:after {
+                 opacity: 1;
+                 right: 0;
+             }
          </style>
      </head>
      <!--===============================================================================================================================================================================================================
      =================================================================================================================================================================================================================-->
      <body>
          <h1>Animated Button</h1>
-         <div class="one">
-             <button class="two">Hover</button>
-         </div>
+         <button class="one">
+             <span class="two">Hover </span>
+         </button>
      </body>
  </html>
