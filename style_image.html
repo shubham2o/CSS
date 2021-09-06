@@ -5,14 +5,55 @@
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <style>
-             p {
-                 color: red;
+             body {
+                 box-sizing: border-box;
+             }
+             div.one {
+                 position: relative;
+                 width: 50%;
+             }
+             .two {
+                 display: block;
+                 width: 100%;
+                 height: auto;
+             }
+             div.three {
+                 position: absolute;
+                 top: 0;
+                 left:0;
+                 right: 0;
+                 bottom: 0;
+                 height: 100%;
+                 width: 100%;
+                 opacity: 0;
+                 transition: .6s ease;
+                 background-color: navy;
+             }
+             div.one:hover .three {
+                 opacity: 1.0;
+             }
+             .four {
+                 color: white;
                  text-align: center;
+                 font-size: 45px;
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
              }
          </style>
      </head>
+     <!--======================================================================================================================================================================================================
+     =======================================================================================================================================================================================================-->
      <body>
-         <p>Hello World!</p>
-         <p>These paragraphs are styled with CSS.</p>
+         <h1>Fade in Overlay</h1>
+         <div class="one">
+             <img src="img_avatar.png" alt="Avatar" class="two">
+             <div class="three">
+                 <div class="four">
+                     Hello World
+                 </div>
+             </div>
+         </div>
      </body>
  </html>
