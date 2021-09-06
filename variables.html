@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+     <head>
+         <title>VARIABLES</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+             body {
+                 box-sizing: border-box;
+                 background-color:var(--blue);
+             }
+             :root {
+                 --blue:#1e90ff;
+                 --white:#ffffff;
+             }
+             .one {
+                 background-color: var(--white);
+                 padding: 35px 40px;
+                 color: var(--blue);
+                 margin: 10px;
+                 height: 250px;
+             }
+             .two {
+                 border-bottom: 4px solid var(--blue);
+             }
+         </style>
+     </head>
+     <!---==============================================================================================================================================================================================
+     ==================================================================================================================================================================================================-->
+     <body>
+         <h1>Using the var() Function</h1>
+         <div class="one">
+             <h2 class="two">Lorem Ipsum</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at 
+                 erat pulvinar, at pulvinar felis blandit.
+             </p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at 
+                 erat pulvinar, at pulvinar felis blandit.
+             </p>
+              <button style="color: var(--blue); border: 2px solid var(--blue);padding: 6px 10px;">
+                 Yes</button>
+              <button style="color: var(--blue);border: 2px solid var(--blue);padding: 6px 10px;">
+                 No</button>
+         </div>
+     </body>
+ </html>
