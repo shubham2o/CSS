@@ -11,7 +11,8 @@
              .one,
              .two,
              .three,
-             .four {
+             .four,
+             .five {
                  display: inline-block;
              }
              .one a,
@@ -32,7 +33,8 @@
                  background-color: gray;
              }
              .three .active,
-             .four .active {
+             .four .active,
+             .five .active {
                  background-color: green;
                  color: white;
                  border-radius: 8px;
@@ -41,9 +43,19 @@
                  background-color: gray;
                  border-radius: 8px;
              }
-             .four a:hover:not(.active) {
+             .four a:hover:not(.active),
+             .five a:hover:not(.active) {
                  transition: 3s;
                  background-color: gray;
+             }
+             .five a {
+                 text-decoration: none;
+                 float: left;
+                 padding: 8px 16px;
+                 color: black;
+                 font-weight: bold;
+                 border: 1px solid black;
+                 border-radius: 8px;
              }
          </style>
      </head>
@@ -112,6 +124,26 @@
          <h1>Transition Effect on Hover</h1>
          <p>Move the mouse over the numbers.</p>
          <div class="four">
+             <a href="#">&laquo;</a>
+             <a href="#">1</a>
+             <a href="#" class="active">2</a>
+             <a href="#">3</a>
+             <a href="#">4</a>
+             <a href="#">5</a>
+             <a href="#">6</a>
+             <a href="#">7</a>
+             <a href="#">&raquo;</a>
+         </div>
+
+
+         <br><br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Transition Effect on Hover</h1>
+         <p>Move the mouse over the numbers.</p>
+         <div class="five">
              <a href="#">&laquo;</a>
              <a href="#">1</a>
              <a href="#" class="active">2</a>
