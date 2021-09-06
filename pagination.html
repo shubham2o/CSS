@@ -5,14 +5,24 @@
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <style>
-             .one {
+             .one,
+             .two {
                  display: inline-block;
              }
-             .one a {
+             .one a,
+             .two a {
                  text-decoration: none;
                  float: left;
                  padding: 8px 16px;
                  color: black;
+                 font-weight: bold;
+             }
+             .two .active {
+                 background-color: green;
+                 color: white;
+             }
+             .two a:hover:not(.active) {
+                 background-color: gray;
              }
          </style>
      </head>
@@ -24,6 +34,26 @@
              <a href="#">&laquo;</a>
              <a href="#">1</a>
              <a href="#">2</a>
+             <a href="#">3</a>
+             <a href="#">4</a>
+             <a href="#">5</a>
+             <a href="#">6</a>
+             <a href="#">7</a>
+             <a href="#">&raquo;</a>
+         </div>
+
+        
+         <br><br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Active and Hoverable Pagination</h1>
+         <p>Move the mouse over the numbers.</p>
+         <div class="two">
+             <a href="#">&laquo;</a>
+             <a href="#">1</a>
+             <a href="#" class="active">2</a>
              <a href="#">3</a>
              <a href="#">4</a>
              <a href="#">5</a>
