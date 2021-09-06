@@ -5,14 +5,19 @@
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <style>
+             body {
+                 box-sizing: border-box;
+             }
              .one,
              .two,
-             .three {
+             .three,
+             .four {
                  display: inline-block;
              }
              .one a,
              .two a,
-             .three a {
+             .three a,
+             .four a {
                  text-decoration: none;
                  float: left;
                  padding: 8px 16px;
@@ -26,7 +31,8 @@
              .two a:hover:not(.active) {
                  background-color: gray;
              }
-             .three .active {
+             .three .active,
+             .four .active {
                  background-color: green;
                  color: white;
                  border-radius: 8px;
@@ -34,6 +40,10 @@
              .three a:hover:not(.active) {
                  background-color: gray;
                  border-radius: 8px;
+             }
+             .four a:hover:not(.active) {
+                 transition: 3s;
+                 background-color: gray;
              }
          </style>
      </head>
@@ -79,9 +89,29 @@
          <br>
 
 
-         <h1>Active and Hoverable Pagination</h1>
+         <h1>Rounded Active and Hoverable Pagination</h1>
          <p>Move the mouse over the numbers.</p>
          <div class="three">
+             <a href="#">&laquo;</a>
+             <a href="#">1</a>
+             <a href="#" class="active">2</a>
+             <a href="#">3</a>
+             <a href="#">4</a>
+             <a href="#">5</a>
+             <a href="#">6</a>
+             <a href="#">7</a>
+             <a href="#">&raquo;</a>
+         </div>
+
+        
+         <br><br>
+         <hr size="5" noshade>
+         <br>
+
+
+         <h1>Transition Effect on Hover</h1>
+         <p>Move the mouse over the numbers.</p>
+         <div class="four">
              <a href="#">&laquo;</a>
              <a href="#">1</a>
              <a href="#" class="active">2</a>
