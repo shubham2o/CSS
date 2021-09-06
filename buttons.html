@@ -15,7 +15,7 @@
                  text-align: center;
                  font-size: 28px;
                  border-radius: 8px;
-                 border: 1px solid orangered;
+                 border: none;
                  margin-left: 10px;
                  color: white;
                  display: inline-block;
@@ -43,7 +43,29 @@
                  opacity: 1;
                  right: 0;
              }
-             
+             .three {
+                 background-color: green;
+                 padding: 25px;
+                 width: 200px;
+                 margin-left: 10px;
+                 font-size: 28px;
+                 border-radius: 8px;
+                 border: none;
+                 color: white;
+                 box-shadow: 0px 12px 3px gray;
+                 opacity: 0.7;
+                 cursor: pointer;
+                 display: inline-block;
+                 outline: none;
+             }
+             .three:hover{
+                 opacity: 1;
+             }
+             .three:active {
+                 transform: translateY(8px);
+                 background-color: blue;
+                 box-shadow: 0 5px darkgray; 
+             }
          </style>
      </head>
      <!--===============================================================================================================================================================================================================
@@ -62,7 +84,7 @@
 
          <h1>Animated Buttons - "Pressed Effect"</h1>
          <button class="three">
-             <span class="four">Click Me</span>
+             Click Me
          </button>
      </body>
  </html>
