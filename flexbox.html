@@ -36,7 +36,8 @@
              .twenty2,
              .twenty3,
              .twenty4,
-             .twenty5  {
+             .twenty5,
+             .twenty6    {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -66,7 +67,8 @@
              .twenty2 div,
              .twenty3 div,
              .twenty4 div,
-             .twenty5 div  {
+             .twenty5 div,
+             .twenty6 div   {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -162,6 +164,11 @@
                  align-content: flex-end;
                  flex-wrap: wrap;
                  height: 600px;
+             }
+             .twenty6 {
+                 height: 300px;
+                 align-items: center;
+                 justify-content: center;
              }
          </style>
      </head>
@@ -636,5 +643,21 @@
              <div>12</div>  
          </div>
 
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>Perfect Centering</h1>
+         <p>A container with both the justify-content and the align-items properties set to 
+             <em>center</em> will align the item(s) in the center (in both axis).
+         </p>
+         <div class="twenty6">
+             <div>1</div>
+         </div>
+
+
+         <br><hr size="10" noshade>
      </body>
  </html>
