@@ -39,7 +39,8 @@
              .twenty5,
              .twenty6,
              .twenty7,
-             .twenty8   {
+             .twenty8,
+             .thirty   {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -73,7 +74,8 @@
              .twenty6 div,
              .twenty7 div,
              .twenty8 div,
-             .twenty9 div  {
+             .twenty9 div,
+             .thirty div  {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -712,6 +714,21 @@
              <div style="flex-shrink: 20">3</div>
              <div>4</div>
              <div>5</div>
+         </div>
+
+
+         <br><br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-basis Property</h1>
+         <p>Set the initial length of the third flex item to 200 pixels:</p>
+         <div class="thirty">
+             <div>1</div>
+             <div>2</div>
+             <div style="flex-basis: 200px;">3</div>
+             <div>4</div>
          </div>
      </body>
  </html>
