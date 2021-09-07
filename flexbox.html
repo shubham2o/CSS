@@ -41,7 +41,8 @@
              .twenty7,
              .twenty8,
              .thirty,
-             .thirty1  {
+             .thirty1,
+             .thirty2  {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -77,7 +78,8 @@
              .twenty8 div,
              .twenty9 div,
              .thirty div,
-             .thirty1 div  {
+             .thirty1 div,
+             .thirty2 div  {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -183,6 +185,9 @@
                  display: flex;
                  align-items: stretch;
                  background-color: var(--blue);
+             }
+             .thirty2 {
+                 height: 200px;
              }
          </style>
      </head>
@@ -748,5 +753,24 @@
              <div>2</div>
              <div style="flex: 0 0 200px">3</div>
          </div>
+
+
+         <br><br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-self Property</h1>
+         <p>The "align-self: center;" aligns the selected flex item in the 
+             middle of the container:
+         </p>
+         <div class="thirty2">
+             <div>1</div>
+             <div>2</div>
+             <div style="align-self: center;">3</div>
+             <div>4</div>
+         </div>
+         
+         <br><hr size="10" noshade>
      </body>
  </html>
