@@ -8,12 +8,29 @@
              * {
                  box-sizing: border-box;
              }
+             body {
+                 background-color: black;
+             }
              :root {
                  --white:#FFFFFF;
-                 --tan:#D2B48C;
+                 --tan:#605536;
+                 --blue:#0000FF;
+                 --olive:#808000;
+             }
+             .one {
+                 background-color: var(--tan);
+                 color: var(--white);
+                 padding: 10px 20px;
              }
              @media screen and (max-width:992px) {
-                 
+                 div.one {
+                     background-color: var(--blue);
+                 }
+             }
+             @media screen and (max-width:600px) {
+                 div.one {
+                     background-color: var(--olive);
+                 }
              }
          </style>
      </head>
