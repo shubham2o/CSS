@@ -24,7 +24,8 @@
              .ten,
              .eleven,
              .twelve ,
-             .thirteen {
+             .thirteen,
+             .fourteen {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -42,7 +43,8 @@
              .ten div,
              .eleven div,
              .twelve div,
-             .thirteen div {
+             .thirteen div,
+             .fourteen div {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -85,6 +87,9 @@
              }
              .thirteen {
                  justify-content: space-around;
+             }
+             .fourteen {
+                 justify-content: space-between;
              }
          </style>
      </head>
@@ -318,10 +323,19 @@
 
 
          <h1>The justify-content Property</h1>
-         <p>The "justify-content: flex-end;" aligns the flex items at the end of the 
-             container (this is default):
-         </p>
+         <p>The "justify-content: space-around;" displays the flex items with space 
+             between,after,above,before the lines:</p>
          <div class="thirteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
+
+
+         <h1>The justify-content Property</h1>
+         <p>The "justify-content: space-between;" displays the flex items with space 
+             between the lines:</p>
+         <div class="fourteen">
              <div>1</div>
              <div>2</div>
              <div>3</div>  
