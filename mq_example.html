@@ -141,6 +141,23 @@
                      font-size: 80px;
                  }
              }
+             .eleven {
+                 color: var(--blue);
+                 background-color: var(--yellow);
+                 font-weight: var(--font-weight);
+                 padding: 10px 20px;
+                 margin: 20px;
+                 border-radius: 30px;
+                 font-size: 24px;
+                 outline: 4px dashed blue;
+                 outline-offset: 10px;
+                 border: 10px double red;
+             }
+             @media screen and (orientation:landscape) {
+                 .eleven {
+                     background-color: var(--white);
+                 }
+             }
          </style>
      </head>
      <!--=============================================================================================================================================================================================================
@@ -229,6 +246,18 @@
              <p>When the browser's width is 600px wide or less, set the font-size of DIV to 30px. 
                  When it is 601px or wider, set the font-size to 80px. Resize the browser window 
                  to see the effect.
+             </p>
+         </div>
+
+
+         <br><br>
+         <hr size="10" noshade>
+         <br><br>
+
+
+         <div class="eleven">
+             <p>Resize the browser window. When the width of this document is larger than the height, 
+                 the background color is "white", otherwise it is "yellow".
              </p>
          </div>
      </body>
