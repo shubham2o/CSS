@@ -17,6 +17,7 @@
                  --blue:#0000FF;
                  --olive:#808000;
                  --black:#000000;
+                 --yellow:#FFFF00;
                  --font-weight:bold;
              }
              .one {
@@ -93,6 +94,25 @@
                  display: table;
                  clear: both;
              }
+             .seven {
+                 background-color: var(--white);
+                 font-weight: var(--font-weight);
+                 padding: 10px 20px;
+                 font-size: 18px;
+                 margin: 10px;
+             }
+             .eight {
+                 background-color: var(--yellow);
+                 padding: 10px 20px;
+                 text-align: center;
+                 border: 2px solid black;
+                 display: block;
+             }
+             @media screen and (max-width:700px) {
+                 .eight {
+                     display: none;
+                 }
+             }
          </style>
      </head>
      <!--=============================================================================================================================================================================================================
@@ -153,6 +173,20 @@
                  <h2>Column 4</h2>
                  <p>Some text...</p>
              </div>
+         </div>
+
+
+         <br><br>
+         <hr size="10" noshade>
+         <br><br>
+
+
+         <div class="seven">
+             <h2>Hide elements on different screen sizes</h2>
+             <div class="eight">Example DIV</div>
+             <p>When the browser's width is 600px wide or less, hide the div element. Resize the browser 
+             window to see the effect.
+             </p>
          </div>
      </body>
  </html>
