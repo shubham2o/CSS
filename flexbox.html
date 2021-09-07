@@ -33,7 +33,10 @@
              .nineteen,
              .twenty,
              .twenty1,
-             .twenty2  {
+             .twenty2,
+             .twenty3,
+             .twenty4,
+             .twenty5  {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -60,7 +63,10 @@
              .nineteen div,
              .twenty div,
              .twenty1 div,
-             .twenty2 div  {
+             .twenty2 div,
+             .twenty3 div,
+             .twenty4 div,
+             .twenty5 div  {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -141,6 +147,21 @@
                  height: 600px;
                  flex-wrap: wrap;
                  align-content: stretch;
+             }
+             .twenty3 {
+                 align-content: center;
+                 height: 600px;
+                 flex-wrap: wrap;
+             }
+             .twenty4 {
+                 align-content: flex-start;
+                 flex-wrap: wrap;
+                 height: 600px;
+             }
+             .twenty5 {
+                 align-content: flex-end;
+                 flex-wrap: wrap;
+                 height: 600px;
              }
          </style>
      </head>
@@ -545,5 +566,75 @@
              <div>11</div>
              <div>12</div>  
          </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The align-content Property</h1>
+         <p>The "align-content: center;" displays the flex lines in the middle of the container:</p>
+         <div class="twenty3">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>  
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>  
+             <div>10</div>
+             <div>11</div>
+             <div>12</div>  
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The align-content Property</h1>
+         <p>The "align-content: flex-start;" displays the flex lines at the start of the container:</p>
+         <div class="twenty4">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>  
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>  
+             <div>10</div>
+             <div>11</div>
+             <div>12</div>  
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The align-content Property</h1>
+         <p>The "align-content: flex-end;" displays the flex lines at the end of the container:</p>
+         <div class="twenty5">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>  
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>  
+             <div>10</div>
+             <div>11</div>
+             <div>12</div>  
+         </div>
+
      </body>
  </html>
