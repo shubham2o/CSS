@@ -19,7 +19,11 @@
              .five,
              .six,
              .seven,
-             .eight {
+             .eight,
+             .nine,
+             .ten,
+             .eleven,
+             .twelve {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -32,7 +36,11 @@
              .five div,
              .six div,
              .seven div,
-             .eight div {
+             .eight div,
+             .nine div,
+             .ten div,
+             .eleven div,
+             .twelve div {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -60,6 +68,18 @@
              }
              .eight {
                  flex-wrap: wrap-reverse;
+             }
+             .nine {
+                 flex-flow: row wrap;
+             }
+             .ten {
+                 justify-content: center;
+             }
+             .eleven {
+                 justify-content: flex-start;
+             }
+             .twelve {
+                 justify-content: flex-end;
              }
          </style>
      </head>
@@ -206,10 +226,84 @@
              <div>5</div>
              <div>6</div>
              <div>7</div>
-              <div>8</div>
+             <div>8</div>
              <div>9</div>
              <div>10</div>
              <div>11</div>
              <div>12</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-flow Property</h1>
+         <p>The flex-flow property is a shorthand property for the flex-direction and the 
+             flex-wrap properties.
+         </p>
+         <div class="nine">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+             <div>10</div>
+             <div>11</div>
+             <div>12</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The justify-content Property</h1>
+         <p>The "justify-content: center;" aligns the flex items at the center of the 
+             container:
+         </p>
+         <div class="ten">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The justify-content Property</h1>
+         <p>The "justify-content: flex-start;" aligns the flex items at the beginning of 
+             the container (this is default):
+         </p>
+         <div class="eleven">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The justify-content Property</h1>
+         <p>The "justify-content: flex-end;" aligns the flex items at the end of the 
+             container (this is default):
+         </p>
+         <div class="twelve">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
      </body>
  </html>
