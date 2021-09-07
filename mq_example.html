@@ -17,11 +17,13 @@
                  --blue:#0000FF;
                  --olive:#808000;
                  --black:#000000;
+                 --font-weight:bold;
              }
              .one {
                  background-color: var(--tan);
                  color: var(--black);
                  padding: 10px 20px;
+                 font-weight: var(--font-weight);
              }
              @media screen and (max-width:992px) {
                  div.one {
@@ -35,17 +37,63 @@
                      color: var(--white);
                  }
              }
+             .two {
+                 background-color: var(--white);
+                 padding: 10px 20px;
+                 margin-bottom: 20px;
+             }
+             .three {
+                 overflow: hidden;
+                 background-color: var(--olive);  
+             }
+             .three a {
+                 color: var(--black);
+                 text-align: center;
+                 padding: 10px 40px;
+                 font-weight: bold;
+                 font-size: 24px;
+                 text-decoration: none;
+                 display: inline;
+                 float: left;
+             }
+             .three a:hover {
+                 background-color: var(--blue);
+                 color: var(--white);
+             }
+             @media screen and (max-width:600px) {
+                 .three a {
+                     display: block;
+                     float: none;
+                 }
+             }
          </style>
      </head>
      <!--=============================================================================================================================================================================================================
      ================================================================================================================================================================================================================-->
      <body>
-       <div class="one">
+         <div class="one">
            <h1>Resize the browser window to see the effect!</h1>
              <p>By default, the background color of the document is "tan". If the screen size 
                is 992px or less, the color will change to "blue". If it is 600px or less, it 
                will change to "olive".
              </p>
-       </div>
+         </div>
+
+
+         <br><br>
+         <hr size="5" noshade>
+
+
+         <h2>Responsive navigation menu</h2>
+         <div class="two">
+             <p>Resize the browser window to see the effect: When the screen is less than 600px, 
+                 the navigation menu will be displayed vertically instead of horizontally.
+             </p>
+         </div>
+         <div class="three">
+             <a href="#link">Link</a>
+             <a href="#link">Link</a>
+             <a href="#link">Link</a>
+         </div>
      </body>
  </html>
