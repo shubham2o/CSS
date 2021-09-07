@@ -14,7 +14,12 @@
              }
              .one,
              .two,
-             .three {
+             .three,
+             .four,
+             .five,
+             .six,
+             .seven,
+             .eight {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -22,7 +27,12 @@
              }
              .one div,
              .two div,
-             .three div {
+             .three div,
+             .four div,
+             .five div,
+             .six div,
+             .seven div,
+             .eight div {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -35,6 +45,21 @@
              }
              .three {
                  flex-direction: column-reverse;
+             }
+             .four {
+                 flex-direction: row;
+             }
+             .five {
+                 flex-direction: row-reverse;
+             }
+             .six {
+                 flex-wrap: wrap;
+             }
+             .seven {
+                 flex-wrap: nowrap;
+             }
+             .eight {
+                 flex-wrap: wrap-reverse;
              }
          </style>
      </head>
@@ -83,5 +108,108 @@
              <div>2</div>
              <div>3</div>
          </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-direction Property</h1>
+         <p>The "flex-direction: row;" stacks the flex items horizontally (from left to right):</p>
+         <div class="four">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-direction Property</h1>
+         <p>The "flex-direction: row-reverse;" stacks the flex items horizontally (but from right 
+             to left):
+         </p>
+         <div class="five">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-wrap Property</h1>
+         <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+         <div class="six">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+             <div>10</div>
+             <div>11</div>
+             <div>12</div>
+             <div>13</div>
+             <div>14</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-wrap Property</h1>
+         <p>The "flex-wrap: nowrap;" specifies that the flex items will not wrap (this is 
+             default):
+         </p>
+         <div class="seven">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+             <div>10</div>
+             <div>11</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The flex-wrap Property</h1>
+         <p>The "flex-wrap: wrap-reverse;" specifies that the flex items will wrap if necessary, 
+             in reverse order:
+         </p>
+         <div class="eight">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+              <div>8</div>
+             <div>9</div>
+             <div>10</div>
+             <div>11</div>
+             <div>12</div>
      </body>
  </html>
