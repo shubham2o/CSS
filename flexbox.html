@@ -28,7 +28,9 @@
              .fourteen,
              .fifteen ,
              .sixteen,
-             .seventeen{
+             .seventeen,
+             .eighteen,
+             .nineteen  {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -50,7 +52,9 @@
              .fourteen div,
              .fifteen div,
              .sixteen div,
-             .seventeen div {
+             .seventeen div,
+             .eighteen div,
+             .nineteen div {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -108,6 +112,14 @@
              .seventeen {
                  align-items: flex-end;
                  height: 200px;
+             }
+             .eighteen {
+                 align-items: stretch;
+                 height: 200px;
+             }
+             .nineteen {
+                 align-items: baseline;
+                 height: 250px;
              }
          </style>
      </head>
@@ -411,5 +423,35 @@
              <div>3</div>  
          </div>
 
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-items Property</h1>
+         <p>The "align-items: stretch;" stretches the flex items to fill the container 
+             (this is default):
+         </p>
+         <div class="eighteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-items Property</h1>
+         <p>The "align-items: baseline;" aligns the flex items such as their baselines aligns:</p>
+         <div class="nineteen">
+             <div><h1>1</h1></div>
+             <div><h6>2</h6></div>
+             <div><h3>3</h3></div>  
+             <div><small>4</small></div>  
+         </div>
      </body>
  </html>
