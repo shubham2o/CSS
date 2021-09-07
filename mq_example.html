@@ -115,6 +115,32 @@
                      display: none;
                  }
              }
+             .nine {
+                 background-color: var(--yellow);
+                 font-weight: var(--font-weight);
+                 padding: 10px 20px;
+                 border-radius: 20px;
+                 margin: 10px;
+                 font-size: 18px;
+             }
+             .ten {
+                 background-color:var(--white);
+                 padding: 10px 20px;
+                 border: 2px solid black;
+                 display: block;
+                 border-radius: 20px;
+                 margin: 20px;
+             }
+             @media screen and (max-width:700px) {
+                 .ten {
+                     font-size: 30px;
+                 }
+             }
+             @media screen and (min-width:701px) {
+                 .ten {
+                     font-size: 80px;
+                 }
+             }
          </style>
      </head>
      <!--=============================================================================================================================================================================================================
@@ -198,8 +224,8 @@
 
 
          <div class="nine">
-             <h2>Change the font size of an element on different screen sizes</h2>
-             <div class="nine">Example DIV</div>
+             <h1>Change the font size of an element on different screen sizes</h1>
+             <div class="ten">Example DIV</div>
              <p>When the browser's width is 600px wide or less, set the font-size of DIV to 30px. 
                  When it is 601px or wider, set the font-size to 80px. Resize the browser window 
                  to see the effect.
