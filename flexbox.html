@@ -13,23 +13,28 @@
                  --white:	#FFFFFF;
              }
              .one,
-             .two {
+             .two,
+             .three {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
                  height: auto;
              }
              .one div,
-             .two div {
-                 font-size: 49px;
-                 padding: 5px 20px;
+             .two div,
+             .three div {
+                 font-size: 35px;
+                 padding: 15px 30px;
                  margin: 15px;
                  background-color: var(--white);
-                 width: 35px;
+                 width: 30px;
                  text-align: center;
              }
              .two {
                  flex-direction: column;
+             }
+             .three {
+                 flex-direction: column-reverse;
              }
          </style>
      </head>
@@ -58,6 +63,22 @@
          <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):
          </p>
          <div class="two">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-direction Property</h1>
+         <p>The "flex-direction: column-reverse;" stacks the flex items vertically (but from bottom 
+             to top):
+         </p>
+         <div class="three">
              <div>1</div>
              <div>2</div>
              <div>3</div>
