@@ -66,6 +66,33 @@
                      float: none;
                  }
              }
+             .five {
+                 background-color: var(--white);
+                 padding: 15px 20px;
+                 margin-bottom: 30px;
+             }
+             .four {
+                 color: var(--white);
+                 background-color: var(--tan);
+                 padding: 20px;
+                 float: left;
+                 width: 25%;
+             }
+             @media screen and (max-width:992px) {
+                 .four {
+                     width: 50%;
+                 }
+             }
+             @media screen and (max-width:600px) {
+                 .four {
+                     width: 100%;
+                 }
+             }
+             .six:after {
+                 content: "";
+                 display: table;
+                 clear: both;
+             }
          </style>
      </head>
      <!--=============================================================================================================================================================================================================
@@ -81,7 +108,7 @@
 
 
          <br><br>
-         <hr size="5" noshade>
+         <hr size="10" noshade>
 
 
          <h2>Responsive navigation menu</h2>
@@ -95,5 +122,38 @@
              <a href="#link">Link</a>
              <a href="#link">Link</a>
          </div>
+
+
+         <br><br>
+         <hr size="10" noshade>
+         <br><br>
+
+
+         <div class="five">
+             <h1>Responsive Four Column Layout</h1>
+             <p><strong>Resize the browser window to see the responsive effect.</strong> On screens 
+             that are 992px wide or less, the columns will resize from four columns to two columns. 
+             On screens that are 600px wide or less, the columns will stack on top of each other 
+             instead of next to eachother.</p>
+         </div>
+         <div class="six">
+         <div class="four" style="background-color:var(--blue)">
+             <h2>Column 1</h2>
+              <p>Some text...</p>
+         </div>
+         <div class="four" style="background-color: var(--olive);">
+             <h2>Column 2</h2>
+             <p>Some text...</p>
+         </div> 
+         <div class="four" style="background-color:var(--tan)">
+             <h2>Column 3</h2>
+             <p>Some text...</p>
+         </div>
+         <div class="four" style="background-color: var(--blue);">
+             <h2>Column 4</h2>
+             <p>Some text...</p>
+         </div>
+         </div>
+         </p>
      </body>
  </html>
