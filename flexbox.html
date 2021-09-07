@@ -12,17 +12,24 @@
                  --blue:#4169e1;
                  --white:	#FFFFFF;
              }
-             .one {
+             .one,
+             .two {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
-                 height: 100px;
+                 height: auto;
              }
-             .one div {
-                 font-size: 55px;
-                 padding: 10px 20px;
-                 margin: 12px;
+             .one div,
+             .two div {
+                 font-size: 49px;
+                 padding: 5px 20px;
+                 margin: 15px;
                  background-color: var(--white);
+                 width: 35px;
+                 text-align: center;
+             }
+             .two {
+                 flex-direction: column;
              }
          </style>
      </head>
@@ -40,5 +47,20 @@
          <p>Direct child elements(s) of the flexible container automatically becomes flexible 
              items.
          </p>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The flex-direction Property</h1>
+         <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):
+         </p>
+         <div class="two">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+         </div>
      </body>
  </html>
