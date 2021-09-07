@@ -25,7 +25,10 @@
              .eleven,
              .twelve ,
              .thirteen,
-             .fourteen {
+             .fourteen,
+             .fifteen ,
+             .sixteen,
+             .seventeen{
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -44,7 +47,10 @@
              .eleven div,
              .twelve div,
              .thirteen div,
-             .fourteen div {
+             .fourteen div,
+             .fifteen div,
+             .sixteen div,
+             .seventeen div {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -90,6 +96,18 @@
              }
              .fourteen {
                  justify-content: space-between;
+             }
+             .fifteen {
+                 align-items: center;
+                 height: 200px;
+             }
+             .sixteen {
+                 align-items: flex-start;
+                 height: 200px;
+             }
+             .seventeen {
+                 align-items: flex-end;
+                 height: 200px;
              }
          </style>
      </head>
@@ -331,7 +349,12 @@
              <div>3</div>  
          </div>
 
+        
+         <br>
+         <hr size="10" noshade>
+         <br>
 
+        
          <h1>The justify-content Property</h1>
          <p>The "justify-content: space-between;" displays the flex items with space 
              between the lines:</p>
@@ -340,5 +363,53 @@
              <div>2</div>
              <div>3</div>  
          </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-items Property</h1>
+         <p>The "align-items: center;" aligns the flex items in the middle of the 
+             container:
+         </p>
+         <div class="fifteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The align-items Property</h1>
+         <p>The "align-items: flex-start;" aligns the flex items at the top of the 
+             container:</p>
+         <div class="sixteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-items Property</h1>
+         <p>The "align-items: flex-end;" aligns the flex items at the bottom of the 
+             container:
+         </p>
+         <div class="seventeen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
+
      </body>
  </html>
