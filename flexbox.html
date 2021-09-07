@@ -23,7 +23,8 @@
              .nine,
              .ten,
              .eleven,
-             .twelve {
+             .twelve ,
+             .thirteen {
                  display: flex;
                  background-color: var(--blue);
                  width: 100%;
@@ -40,7 +41,8 @@
              .nine div,
              .ten div,
              .eleven div,
-             .twelve div {
+             .twelve div,
+             .thirteen div {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -80,6 +82,9 @@
              }
              .twelve {
                  justify-content: flex-end;
+             }
+             .thirteen {
+                 justify-content: space-around;
              }
          </style>
      </head>
@@ -301,6 +306,22 @@
              container (this is default):
          </p>
          <div class="twelve">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>  
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The justify-content Property</h1>
+         <p>The "justify-content: flex-end;" aligns the flex items at the end of the 
+             container (this is default):
+         </p>
+         <div class="thirteen">
              <div>1</div>
              <div>2</div>
              <div>3</div>  
