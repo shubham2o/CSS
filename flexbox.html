@@ -72,7 +72,8 @@
              .twenty5 div,
              .twenty6 div,
              .twenty7 div,
-             .twenty8 div  {
+             .twenty8 div,
+             .twenty9 div  {
                  font-size: 35px;
                  padding: 15px 30px;
                  margin: 15px;
@@ -173,6 +174,11 @@
                  height: 300px;
                  align-items: center;
                  justify-content: center;
+             }
+             .twenty9 {
+                 display: flex;
+                 align-items: stretch;
+                 background-color: var(--blue);
              }
          </style>
      </head>
@@ -670,10 +676,10 @@
          <h1>The order Property</h1>
          <p>Use the order property to sort the flex items as you like:</p>
          <div class="twenty7">
-             <div style="order: 3;">1</div>
-             <div style="order: 2;">2</div>
-             <div style="order: 4;">3</div>
-             <div style="order: 1;">4</div>
+             <div style="order: 3">1</div>
+             <div style="order: 2">2</div>
+             <div style="order: 4">3</div>
+             <div style="order: 1">4</div>
          </div>
 
 
@@ -687,9 +693,9 @@
              flex items:
          </p>
          <div class="twenty8">
-             <div style="flex-grow: 1;">1</div>
-             <div style="flex-grow: 1;">2</div>
-             <div style="flex-grow: 8;">3</div>
+             <div style="flex-grow: 1">1</div>
+             <div style="flex-grow: 1">2</div>
+             <div style="flex-grow: 8">3</div>
          </div>
 
 
@@ -698,6 +704,14 @@
          <br>
 
 
-         
+         <h1>The flex-shrink Property</h1>
+         <p>Do not let the third flex item shrink as much as the other flex items:</p>
+         <div class="twenty9">
+             <div>1</div>
+             <div>2</div>
+             <div style="flex-shrink: 20">3</div>
+             <div>4</div>
+             <div>5</div>
+         </div>
      </body>
  </html>
