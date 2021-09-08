@@ -17,7 +17,8 @@
                  width: auto;
                  height: auto;
              }
-             .one div {
+             .one div,
+             .two div {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -25,6 +26,15 @@
                  text-align: center;
                  font-weight: bold;
                  margin: 1px;
+             }
+             .two {
+                 outline: 12px solid blue;
+                 margin: 12px;
+                 display: inline-grid;
+                 grid-template-columns: auto auto auto;
+                 border: 2.5px solid black;
+                 width: auto;
+                 height: auto;
              }
          </style>
      </head>
@@ -35,10 +45,30 @@
          <p>A Grid Layout must have a parent element with the <em>display</em> property set 
              to <em>grid</em> or <em>inline-grid</em>.
          </p>
-         <p>Direct child element(s) of the grid container automatically becomes grid items.
-         </p>
+         <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
          <br>
          <div class="one">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The display Property:</h1>
+         <p>Set the <em>display</em> property to <em>inline-grid</em> to make an inline grid container.</p>
+         <br>
+         <div class="two">
              <div>1</div>
              <div>2</div>
              <div>3</div>
