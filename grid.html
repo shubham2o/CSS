@@ -12,7 +12,9 @@
              .two div,
              .three div,
              .four div,
-             .five div {
+             .five div,
+             .six div,
+             .eight div {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -24,7 +26,9 @@
              .one,
              .three,
              .four,
-             .five {
+             .five,
+             .six,
+             .eight {
                  display: grid;
                  grid-template-columns: auto auto auto;
                  outline: 12px solid blue;
@@ -50,6 +54,14 @@
              }
              .five {
                  grid-gap: 20px 40px;
+             }
+             .six .seven {
+                 grid-column-start: 1;
+                 grid-column-end: 5;
+             }
+             .eight .nine {
+                 grid-row-start: 1;
+                 grid-row-end: 5;
              }
          </style>
      </head>
@@ -150,6 +162,43 @@
          <br>
          <div class="five">
              <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>Grid Lines</h1>
+         <p>You can refer to line numbers when placing grid items.</p>
+         <br>
+         <div class="six">
+             <div class="seven">1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <h1>Grid Lines</h1>
+         <p>You can refer to line numbers when placing grid items.</p>
+         <br>
+         <div class="eight">
+             <div class="nine">1</div>
              <div>2</div>
              <div>3</div>
              <div>4</div>
