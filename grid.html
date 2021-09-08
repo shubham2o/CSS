@@ -14,7 +14,9 @@
              .four div,
              .five div,
              .six div,
-             .eight div {
+             .eight div,
+             .ten div,
+             .eleven div {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -28,7 +30,9 @@
              .four,
              .five,
              .six,
-             .eight {
+             .eight,
+             .ten,
+             .eleven {
                  display: grid;
                  grid-template-columns: auto auto auto;
                  outline: 12px solid blue;
@@ -36,6 +40,7 @@
                  border: 5px solid black;
                  width: auto;
                  height: auto;
+                 background-color: red;
              }
              .two {
                  outline: 12px solid blue;
@@ -62,6 +67,12 @@
              .eight .nine {
                  grid-row-start: 1;
                  grid-row-end: 5;
+             }
+             .ten {
+                 justify-content: space-evenly;
+             }
+             .eleven {
+                 justify-content: space-around;
              }
          </style>
      </head>
@@ -194,11 +205,41 @@
          </div>
 
 
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
          <h1>Grid Lines</h1>
          <p>You can refer to line numbers when placing grid items.</p>
          <br>
          <div class="eight">
              <div class="nine">1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The justify-content Property</h1>
+         <p>Use the <em>justify-content</em> property to align the grid 
+             inside the container.
+         </p>
+         <p>The value "space-evenly" will give the columns equal amount 
+             of space between, and around them:
+         </p>
+         <div class="ten">
+             <div>1</div>
              <div>2</div>
              <div>3</div>
              <div>4</div>
