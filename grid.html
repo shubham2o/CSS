@@ -8,19 +8,11 @@
              body {
                  box-sizing: border-box;
              }
-             .one {
-                 outline: 12px solid blue;
-                 margin: 12px;
-                 display: grid;
-                 grid-template-columns: auto auto auto;
-                 border: 2.5px solid black;
-                 width: auto;
-                 height: auto;
-             }
              .one div,
              .two div,
              .three div,
-             .four div {
+             .four div,
+             .five div {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -28,6 +20,18 @@
                  text-align: center;
                  font-weight: bold;
                  margin: 1px;
+             }
+             .one,
+             .three,
+             .four,
+             .five {
+                 display: grid;
+                 grid-template-columns: auto auto auto;
+                 outline: 12px solid blue;
+                 margin: 12px;
+                 border: 5px solid black;
+                 width: auto;
+                 height: auto;
              }
              .two {
                  outline: 12px solid blue;
@@ -37,17 +41,7 @@
                  border: 2.5px solid black;
                  width: auto;
                  height: auto;
-             }
-             .three,
-             .four {
-                 display: grid;
-                 grid-template-columns: auto auto auto;
-                 outline: 12px solid blue;
-                 margin: 12px;
-                 border: 5px solid black;
-                 width: auto;
-                 height: auto;
-             }
+             }           
              .three {
                  grid-column-gap: 20px;
              }
