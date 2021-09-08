@@ -18,7 +18,9 @@
                  height: auto;
              }
              .one div,
-             .two div {
+             .two div,
+             .three div,
+             .four div {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -35,6 +37,25 @@
                  border: 2.5px solid black;
                  width: auto;
                  height: auto;
+             }
+             .three,
+             .four {
+                 display: grid;
+                 grid-template-columns: auto auto auto;
+                 outline: 12px solid blue;
+                 margin: 12px;
+                 border: 5px solid black;
+                 width: auto;
+                 height: auto;
+             }
+             .three {
+                 grid-column-gap: 20px;
+             }
+             .four {
+                 grid-row-gap: 20px;
+             }
+             .five {
+                 grid-gap: 20px 20px;
              }
          </style>
      </head>
@@ -69,6 +90,47 @@
          <p>Set the <em>display</em> property to <em>inline-grid</em> to make an inline grid container.</p>
          <br>
          <div class="two">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The grid-column-gap Property:</h1>
+         <p>Use the <em>grid-column-gap</em> property to adjust the space between the columns.</p>
+         <br>
+         <div class="three">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+
+         <h1>The grid-row-gap Property:</h1>
+         <p>Use the <em>grid-row-gap</em> property to adjust the space between the rows.</p>         <br>
+         <div class="four">
              <div>1</div>
              <div>2</div>
              <div>3</div>
