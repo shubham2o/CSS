@@ -20,7 +20,11 @@
              .twelve div,
              .thirteen div,
              .fourteen div,
-             .fifteen div   {
+             .fifteen div,
+             .sixteen div,
+             .seventeen div,
+             .eighteen div,
+             .nineteen div   {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -40,7 +44,11 @@
              .twelve,
              .thirteen,
              .fourteen,
-             .fifteen     {
+             .fifteen,
+             .sixteen,
+             .seventeen,
+             .eighteen,
+             .nineteen    {
                  display: grid;
                  grid-template-columns: auto auto auto;
                  outline: 12px solid blue;
@@ -93,6 +101,26 @@
              }
              .fifteen {
                  justify-content: end;
+             }
+             .sixteen {
+                 align-content: center;
+                 grid-gap: 30px;
+                 height: 600px;
+             }
+             .seventeen {
+                 align-content:space-evenly;
+                 grid-gap: 30px;
+                 height: 600px;
+             }
+             .eighteen {
+                 align-content: space-around;
+                 grid-gap: 30px;
+                 height: 600px;
+             }
+             .nineteen {
+                 align-content: space-between;
+                 grid-gap: 30px;
+                 height: 600px;
              }
          </style>
      </head>
@@ -392,6 +420,85 @@
          <br>
 
 
-         
+         <h1>The align-content Property</h1>
+         <p>Use the <em>align-content</em> property to vertically align the grid 
+             inside the container.
+         </p>
+         <p>The value "center" will align the rows in the middle of the container:</p>
+         <div class="sixteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-content Property</h1>
+         <p>Use the <em>align-content</em> property to vertically align the grid 
+             inside the container.
+         </p>
+         <p>The value "space-evenly" will give the rows equal amount of space 
+             between, and around them:
+         </p>
+         <div class="seventeen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-content Property</h1>
+         <p>Use the <em>align-content</em> property to vertically align the 
+             grid inside the container.
+         </p>
+         <p>The value "space-around" will give the rows equal amount of space 
+             around them:
+         </p>
+         <div class="eighteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The align-content Property</h1>
+         <p>Use the <em>align-content</em> property to vertically align the
+             grid inside the container.
+         </p>
+         <p>The value "space-between" will give the rows equal amount of space 
+             between them:
+         </p>
+         <div class="nineteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+         </div>
+
      </body>
  </html>
