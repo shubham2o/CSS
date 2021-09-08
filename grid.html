@@ -26,7 +26,10 @@
              .eighteen div,
              .nineteen div,
              .twenty div,
-             .twenty1 div  {
+             .twenty1 div,
+             .twenty2 div,
+             .twenty4 div,
+             .twenty6 div  {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -52,7 +55,10 @@
              .eighteen,
              .nineteen,
              .twenty,
-             .twenty1    {
+             .twenty1,
+             .twenty2,
+             .twenty4,
+             .twenty6   {
                  display: grid;
                  grid-template-columns: auto auto auto;
                  outline: 12px solid blue;
@@ -135,6 +141,20 @@
                  align-content: end;
                  grid-gap: 30px;
                  height: 600px;
+             }
+             .twenty2,
+             .twenty4,
+             .twenty6 {
+                 grid-gap: 10px;
+             }
+             .twenty3 {
+                 grid-column: 1 / 5;
+             }
+             .twenty5 {
+                 grid-column: 1 / span 3;
+             }
+             .twenty7 {
+                 column-gap: 2 / span 3;
              }
          </style>
      </head>
@@ -554,8 +574,91 @@
              <div>6</div>
          </div>
 
+        
          <br>
          <br>
          <hr size="10" noshade>
+
+
+         <h1>The grid-column Property</h1>
+         <p>Use the <em>grid-column</em> property to specify where to place an 
+             item.
+         </p>
+         <p>Item1 will start on column 1 and end before column 5:</p>
+         <div class="twenty2">
+             <div class=twenty3>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+             <div>10</div>
+             <div>11</div>
+             <div>12</div>
+             <div>13</div>
+             <div>14</div>
+             <div>15</div>
+         </div>
+
+    
+         <br>
+         <br>
+         <hr size="10" noshade>
+
+
+         <h1>The grid-column Property</h1>
+         <p>Use the <em>grid-column</em> property to specify where to place an 
+             item.
+         </p>
+         <p>Item1 will start on column-line 1 and span 3 columns:</p>
+             <div class="twenty4">
+                 <div class=twenty5>1</div>
+                 <div>2</div>
+                 <div>3</div>
+                 <div>4</div>
+                 <div>5</div>
+                 <div>6</div>
+                 <div>7</div>
+                 <div>8</div>
+                 <div>9</div>
+                 <div>10</div>
+                 <div>11</div>
+                 <div>12</div>
+                 <div>13</div>
+                 <div>14</div>
+                 <div>15</div>
+         </div>
+
+
+         <br>
+         <br>
+         <hr size="10" noshade>
+
+
+         <h1>The grid-column Property</h1>
+         <p>Use the <em>grid-column</em> property to specify where to 
+             place an item.
+         </p>
+         <p>Item2 will start on column line 2 and span 3 columns:</p>
+             <div class="twenty6">
+                 <div class=twenty7>1</div>
+                 <div>2</div>
+                 <div>3</div>
+                 <div>4</div>
+                 <div>5</div>
+                 <div>6</div>
+                 <div>7</div>
+                 <div>8</div>
+                 <div>9</div>
+                 <div>10</div>
+                 <div>11</div>
+                 <div>12</div>
+                 <div>13</div>
+                 <div>14</div>
+                 <div>15</div>
+             </div>
      </body>
  </html>
