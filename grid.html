@@ -18,7 +18,9 @@
              .ten div,
              .eleven div,
              .twelve div,
-             .thirteen div {
+             .thirteen div,
+             .fourteen div,
+             .fifteen div   {
                  font-size: 45px;
                  background-color: lightblue;
                  padding: 15px 20px;
@@ -36,7 +38,9 @@
              .ten,
              .eleven,
              .twelve,
-             .thirteen {
+             .thirteen,
+             .fourteen,
+             .fifteen     {
                  display: grid;
                  grid-template-columns: auto auto auto;
                  outline: 12px solid blue;
@@ -79,12 +83,15 @@
                  justify-content: space-around;
              }
              .twelve {
-                 justify-content: center;
+                 justify-content: space-between;
              }
              .thirteen {
-                 justify-content: start;
+                 justify-content: center;
              }
              .fourteen {
+                 justify-content: start;
+             }
+             .fifteen {
                  justify-content: end;
              }
          </style>
@@ -284,5 +291,101 @@
              <div>8</div>
              <div>9</div>
          </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The justify-content Property</h1>
+         <p>Use the <em>justify-content</em> property to align the grid inside
+             the container.
+         </p>
+         <p>The value "space-between" will give the columns equal amount of space 
+             between them:
+         </p>
+         <div class="twelve">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The justify-content Property</h1>
+         <p>Use the <em>justify-content</em> property to align the grid inside the 
+             container.
+         </p>
+         <p>The value "center" will align the grid in the middle of the container:</p>
+         <div class="thirteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The justify-content Property</h1>
+         <p>Use the <em>justify-content</em> property to align the grid inside the 
+             container.
+         </p>
+         <p>The value "start" will align the grid at the beginning of the container:</p>
+         <div class="fourteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+
+         <br>
+         <hr size="10" noshade>
+         <br>
+
+        
+         <h1>The justify-content Property</h1>
+         <p>Use the <em>justify-content</em> property to align the grid inside the 
+             container.
+         </p>
+         <p>The value "end" will align the grid at the end of the container:</p>
+         <div class="fifteen">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+             <div>6</div>
+             <div>7</div>
+             <div>8</div>
+             <div>9</div>
+         </div>
+
+         <br><hr size="10" noshade>
      </body>
  </html>
