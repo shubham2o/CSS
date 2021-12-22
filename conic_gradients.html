@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conic gradients</title>
     <style>
-        #grad1 {
+        div {
             height : 200px;
             width : 200px;
             background-color : red; /* For browsers that do not support gradients */
+        }
+
+        #grad1 {
             background-image: conic-gradient(red, yellow, green);
+        }
+
+        #grad2 {
+            background-image : conic-gradient(red, yellow, green, blue, black);
         }
     </style>
 </head>
 <body>
     <h1>Conic Gradient - Three Colors</h1>
     <div id = "grad1"></div>
+
+    <br>
+
+    <h1>Conic Gradient - Five Colors</h1>
+    <div id = grad2></div>
 </body>
 </html>
