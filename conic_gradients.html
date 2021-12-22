@@ -43,6 +43,16 @@
             background-image: conic-gradient(at 60% 45%, red, yellow, green);
             border-radius: 50%;
         }
+
+        #grad8 {
+            background-image : repeating-conic-gradient(red 10%, blue 20%);
+            border-radius: 50%;
+        }
+
+        #grad9 {
+            background-image: repeating-conic-gradient(red 0deg 10deg, green 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -82,5 +92,17 @@
 
     <h1>Conic Gradient - With a specified center position</h1>
     <div id = "grad7"></div>
+
+    <br>
+    <hr>
+
+    <h1>Conic Gradient - Repeating a Conic Gradient</h1>
+    <div id = "grad8"></div>
+
+    <br>
+
+    <div id = "grad9"></div>
+    
+    <br>
 </body>
 </html>
