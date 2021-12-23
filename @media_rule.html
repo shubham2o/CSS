@@ -16,13 +16,20 @@
                 background-color : lightblue;
             }
         } 
-        */
 
         @media only screen and (orientation: landscape) {
             body {
                 background-color : lightblue;
             }
-        } 
+        }  
+        */
+
+        @media only screen and (orientation: landscape),
+        screen and (max-width : 600px){
+            body {
+                background-color : lightblue;
+            }
+        }
     </style>
 </head>
 <body>
@@ -34,14 +41,10 @@
     <p>Resize the browser window. When the width of this document is 600 pixels or less,
         the background-color is "lightblue", otherwise it is "yellow".
     </p> 
-    -->
 
     <h1>The @media only screen and (orientation: landscape)</h1>
-    <p>only: The only keyword prevents older browsers that do not support media queries 
-        with media features from applying the specified styles. It has no effect on
-        modern browsers.</p>
-    <p>Resize the browser window. When the width of this document is 600 pixels or less,
-        the background-color is "lightblue", otherwise it is "yellow".
-    </p> 
+    -->
+
+    <h1>The @media only screen and (orientation: landscape), screen and (max width: 600px)</h1>
 </body>
 </html>
