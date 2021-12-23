@@ -22,12 +22,18 @@
                 background-color : lightblue;
             }
         }  
-        */
 
         @media only screen and (orientation: landscape),
         screen and (max-width : 600px){
             body {
                 background-color : lightblue;
+            }
+        }
+        */
+
+        @media only screen and (orientation: landscape) and (min-width : 600px) {
+            body {
+                background-color: lightblue;
             }
         }
     </style>
@@ -43,8 +49,10 @@
     </p> 
 
     <h1>The @media only screen and (orientation: landscape)</h1>
-    -->
 
     <h1>The @media only screen and (orientation: landscape), screen and (max width: 600px)</h1>
+    -->
+
+    <h1>@media only screen and (orientation: landscape) and (min-width : 600px)</h1>
 </body>
 </html>
