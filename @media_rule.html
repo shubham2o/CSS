@@ -29,9 +29,15 @@
                 background-color : lightblue;
             }
         }
-        */
 
         @media only screen and (orientation: landscape) and (min-width : 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        */
+
+        @media not all and (orientation : landscape) {
             body {
                 background-color: lightblue;
             }
@@ -51,8 +57,10 @@
     <h1>The @media only screen and (orientation: landscape)</h1>
 
     <h1>The @media only screen and (orientation: landscape), screen and (max width: 600px)</h1>
-    -->
 
     <h1>@media only screen and (orientation: landscape) and (min-width : 600px)</h1>
+    -->
+
+    <h1>@media not all and (orientation : landscape)</h1>
 </body>
 </html>
