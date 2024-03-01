@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheryians Coding School</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>% v/s vw or vh</h2>
+    <p>• % takes its value from its parent every-time.</p>
+    <p>• On the other hand, vw or vh takes its value from the output screen.</p>
+    <br />
+    <div id="parent1">
+      <div id="child1"></div>
+    </div>
+    <br />
+    <div id="parent2">
+      <div id="child2"></div>
+    </div>
+    <br />
+    <hr size="5" noshade />
+
+    <h2>em v/s rem</h2>
+    <p>
+      • They both are relative units, meaning their size is determined based on
+      another value, typically the font size of an element.
+    </p>
+    <p>
+      • em unit is relative to the font size of its parent element. For example,
+      if the font size of a parent element is 16px, 1em is equivalent to 16px.
+      If you set font-size: 2em; on a child element, it would be twice the size
+      of its parent's font size.
+    </p>
+    <p>
+      • rem unit is relative to the root element's font size, which is usually
+      the &lt;html&gt; element. So, if the root element's font size is set to
+      16px, 1rem is equivalent to 16px regardless of the font size of its parent
+      elements.
+    </p>
+    <br />
+    <div id="test1"></div>
+    <br />
+    <div id="test2"></div>
+    <br />
+    <hr size="5" noshade />
+
+    <h2>padding v/s margin</h2>
+    <div id="box1">
+      Padding Padding Padding Padding Padding Padding Padding Padding Padding
+      Padding Padding Padding Padding Padding Padding Padding
+    </div>
+    <br />
+    <div id="box2">
+      Margin Margin Margin Margin Margin Margin Margin Margin Margin Margin
+      Margin Margin Margin Margin Margin Margin Margin Margin
+    </div>
+    <hr size="5" noshade />
+
+    <h2>Block elements v/s inline elements v/s inline-block elements</h2>
+    <p>
+      • Block elements are elements that always start on a new line and take up
+      the full width available to them. For example, if you use a &lt;div&gt; or
+      &lt;p&gt; tag, it will create a new section that takes up the full width
+      available.
+    </p>
+    <p>
+      • Inline elements flow with the text, meaning they don't start on a new
+      line. They only take up as much space as necessary. For example,
+      &lt;span&gt; or &lt;a&gt; tags.
+    </p>
+    <p>
+      • Inline-Block elements are a bit interesting. They take up horizontal
+      space like block elements, but they don't start on a new line. It means
+      they take up the width but don't force a line break. An example is the
+      &lt;imp&gt; tag.
+    </p>
+    <p>
+      • So, if you are converting an image from inline-block to block, it means
+      you want that image to start on a new line and take up the full width.
+    </p>
+    <br />
+    <h2 class="demo1">Block Block Block</h2>
+    <h2 class="demo1">Block Block Block</h2>
+    <br />
+    <h2 class="demo2">Inline Inline Inline</h2>
+    <h2 class="demo2">Inline Inline Inline</h2>
+    <br />
+    <h2 class="demo3">Inline-Block Inline-Block Inline-Block</h2>
+    <h2 class="demo3">Inline-Block Inline-Block Inline-Block</h2>
+    <hr size="5" noshade />
+  </body>
+</html>
