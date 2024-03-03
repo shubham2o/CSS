@@ -185,3 +185,35 @@ h2 {
   height: 50px;
   background-color: rgb(255, 0, 0);
 }
+
+#pseudo-el {
+  p::before {
+    content: "• ";
+  }
+  p::after {
+    content: ". ";
+  }
+  p::first-line {
+    background-color: yellow;
+  }
+  p::first-letter {
+    font-size: 2rem;
+  }
+  p::selection {
+    background-color: teal;
+    color: white;
+  }
+}
+
+#pseudo-cl {
+  p:hover {
+    font-size: 1.5rem;
+  }
+  p:active {
+    color: white;
+    background-color: black;
+  }
+  p:nth-child(1) {
+    color: palevioletred;
+  }
+}
