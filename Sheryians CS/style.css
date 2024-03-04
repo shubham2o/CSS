@@ -213,7 +213,7 @@ h2 {
     color: white;
     background-color: black;
   }
-  p:nth-child(1) {
+  p:nth-child(2) {
     color: palevioletred;
   }
 }
