@@ -94,12 +94,12 @@ body {
 #aside {
   width: 120px;
   height: 120px;
+  border-radius: 50%;
   background-color: black;
   color: white;
   position: absolute;
   top: 44%;
   left: 79%;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
