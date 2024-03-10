@@ -26,8 +26,9 @@ body {
   justify-content: space-between;
   align-items: center;
   #nav-left {
+    font-size: 24px;
     :nth-child(1) {
-      margin: 0px -3.8px 0px 0px;
+      margin: 0px -5.5px 0px 0px;
     }
   }
   #nav-right {
@@ -58,7 +59,7 @@ body {
     h1 {
       font-size: 124px;
       font-weight: 300;
-      letter-spacing: -6px;
+      letter-spacing: -8px;
     }
   }
   #section2-right {
@@ -71,7 +72,7 @@ body {
       align-self: center;
       font-size: 124px;
       font-weight: 300;
-      letter-spacing: -6px;
+      letter-spacing: -8px;
     }
   }
 }
