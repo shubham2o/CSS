@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "gilroy";
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.1px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+#nav {
+  width: 100%;
+  height: 12vh;
+  margin-top: 40px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    width: 20%;
+    height: 100%;
+    padding-left: 4vw;
+    font-size: 45px;
+    font-family: "monument";
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #000;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  :nth-last-child(1) {
+    width: 10%;
+  }
+  :nth-last-child(2) {
+    width: 29%;
+  }
+}
+
+#center {
+  width: 100%;
+  height: 90%;
+  padding: 3vw 4vw 4vw;
+  position: relative;
+  #content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    #video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #overlay {
+      width: 100%;
+      height: 52%;
+      padding: 3vw;
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+      #over1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+          margin-bottom: 0.7vw;
+          font-family: "monument";
+          font-size: 3.6vw;
+        }
+        h2 {
+          border: 1px solid #fff;
+          border-radius: 100%;
+          padding: 1vw 1.3vw;
+          font-size: 2vw;
+        }
+      }
+      #over2 {
+        border-top: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+          font-size: 1.3vw;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+#scroll {
+  width: 100%;
+  height: 40vh;
+  white-space: nowrap;
+  overflow: hidden;
+  .container {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    animation-name: scroll-animation;
+    animation-duration: 12s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    img {
+      width: 15.1%;
+      height: 82%;
+      margin: 1.6vw 0.65vw;
+      border-radius: 100%;
+      object-fit: cover;
+      object-position: 45% 40%;
+    }
+  }
+}
+
+@keyframes scroll-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
