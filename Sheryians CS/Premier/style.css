@@ -132,10 +132,11 @@ body {
         width: 115%;
         height: 70%;
         margin: 1.5vw 0 0.5vw;
-        border-radius: 100%;
+        border-radius: 50%;
         object-fit: cover;
       }
       h3 {
+        padding: 0 0.5vw;
         font-size: 17px;
         text-align: center;
       }
