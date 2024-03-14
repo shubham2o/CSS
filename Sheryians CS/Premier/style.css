@@ -118,17 +118,27 @@ body {
     height: 100%;
     display: inline-block;
     animation-name: scroll-animation;
-    animation-duration: 12s;
+    animation-duration: 15s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    img {
-      width: 15.1%;
-      height: 82%;
-      margin: 1.6vw 0.65vw;
-      border-radius: 100%;
-      object-fit: cover;
-      object-position: 45% 40%;
+    .inside-container {
+      width: calc(100% / 13);
+      height: 100%;
+      margin: 0 0.2vw;
+      padding: 0 0.5vw;
+      display: inline-block;
+      img {
+        width: 115%;
+        height: 70%;
+        margin: 1.5vw 0 0.5vw;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+      h3 {
+        font-size: 17px;
+        text-align: center;
+      }
     }
   }
 }
@@ -140,4 +150,41 @@ body {
   to {
     transform: translateX(-100%);
   }
+}
+
+#alphabet {
+  width: 100%;
+  height: 11vh;
+  margin: 3.2vw 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vw;
+  h5 {
+    margin-right: 2vw;
+    border-bottom: 1px solid #000000;
+    font-size: 2.2vw;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  h6 {
+    border: 1px solid #00000000;
+    border-radius: 100%;
+    padding: 0.4vw 0.7vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+    transition: all ease 0.2s;
+  }
+  h6:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+}
+
+#page2 {
+  width: 100%;
+  height: 100%;
 }
