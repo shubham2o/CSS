@@ -286,3 +286,15 @@ body {
     }
   }
 }
+
+#lady-in-orange {
+  width: 100%;
+  height: 100%;
+  padding: 3vw 4.2vw 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
