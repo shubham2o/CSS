@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   h1 {
     width: 20%;
     height: 100%;
@@ -108,11 +109,12 @@ body {
   }
 }
 
-#scroll {
+#marquee {
   width: 100%;
   height: 40vh;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
   .container {
     width: 100%;
     height: 100%;
@@ -166,6 +168,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.8vw;
+  position: relative;
   h5 {
     margin-right: 2vw;
     border-bottom: 1px solid #000000;
@@ -194,6 +197,7 @@ body {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 57% 43%;
+  position: relative;
   #page2-part1 {
     width: 100%;
     height: 100%;
@@ -247,6 +251,7 @@ body {
   width: 100%;
   height: auto;
   font-family: "monument";
+  position: relative;
   h1 {
     width: 100%;
     height: 100%;
@@ -260,6 +265,7 @@ body {
   height: 100%;
   padding: 1.8vw 4.3vw;
   display: flex;
+  position: relative;
   #page3-part1 {
     width: 83%;
     height: 100%;
@@ -293,6 +299,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 3vw 4.2vw 0;
+  position: relative;
   img {
     width: 100%;
     height: 100%;
@@ -305,11 +312,19 @@ body {
   width: 100%;
   height: auto;
   font-family: "monument";
+  position: relative;
   h1 {
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: 7vw 0 5vw 0;
+    padding: 7vw 0 4.8vw 0;
     letter-spacing: 2px;
   }
+}
+
+#page4 {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
