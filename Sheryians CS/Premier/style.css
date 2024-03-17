@@ -437,13 +437,13 @@ body {
       display: flex;
       position: relative;
       img {
-        width: 100%;
+        width: calc(100% / 2);
         height: 100%;
         object-fit: cover;
         object-position: 0% 0%;
       }
       img:last-child {
-        margin-left: 1.5vw;
+        padding-left: 1.5vw;
       }
     }
   }
@@ -499,18 +499,18 @@ body {
       padding-top: 2vw;
       font-family: "montserrat";
       display: flex;
+      justify-content: space-between;
       position: relative;
       h2 {
-        width: 50%;
+        width: 30%;
         height: 100%;
         font-size: 22px;
         font-weight: 500;
         letter-spacing: -1px;
       }
       h4 {
-        width: 100%;
+        width: 50%;
         height: 100%;
-        padding-left: 6vw;
         font-weight: 500;
       }
     }
