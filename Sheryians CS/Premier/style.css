@@ -460,3 +460,59 @@ body {
     object-fit: cover;
   }
 }
+
+#page5 {
+  width: 100%;
+  height: 100%;
+  padding: 4.2vw 4.2vw 0;
+  display: flex;
+  position: relative;
+  #page5-part1 {
+    width: 55%;
+    height: 100%;
+    margin-right: 3vw;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 30% 30%;
+    }
+  }
+  #page5-part2 {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    #page5-part2-element1 {
+      width: 100%;
+      height: 70%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    #page5-part2-element2 {
+      width: 100%;
+      height: 30%;
+      padding-top: 2vw;
+      font-family: "montserrat";
+      display: flex;
+      position: relative;
+      h2 {
+        width: 50%;
+        height: 100%;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      h4 {
+        width: 100%;
+        height: 100%;
+        padding-left: 6vw;
+        font-weight: 500;
+      }
+    }
+  }
+}
