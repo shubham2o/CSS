@@ -322,9 +322,58 @@ body {
   }
 }
 
-#page4 {
-  background-color: red;
+#below-updates {
   width: 100%;
   height: 100%;
+  padding: 0 4.2vw;
+  font-family: "montserrat";
+  display: flex;
+  flex-direction: column;
   position: relative;
+  .below-updates-elements {
+    width: 100%;
+    height: calc(100% / 4.5);
+    border-top: 2px solid black;
+    padding: 0 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    h2 {
+      width: 9vw;
+      height: 14vh;
+      font-size: 22px;
+      letter-spacing: -1px;
+      font-weight: 500;
+    }
+    img {
+      width: 15%;
+      height: 85%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 100%;
+    }
+    .inside-below-updates-elements {
+      width: 50%;
+    }
+    .next-to-special-view {
+      width: 14%;
+    }
+    .inside-below-updates-elements,
+    .next-to-special-view {
+      height: auto;
+      line-height: 1.4;
+      h1 {
+        font-size: 36px;
+        letter-spacing: -1px;
+        font-weight: 500;
+      }
+      h4 {
+        font-weight: 600;
+      }
+    }
+  }
+  .below-updates-elements:last-child {
+    border-bottom: 2px solid black;
+  }
 }
