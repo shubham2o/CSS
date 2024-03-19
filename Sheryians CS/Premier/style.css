@@ -30,15 +30,34 @@ body {
   align-items: center;
   position: relative;
   h1 {
-    width: 20%;
+    width: 23%;
     height: 100%;
-    padding-left: 4vw;
+    padding-left: 1.3vw;
     font-size: 45px;
     font-family: "monument";
     letter-spacing: -1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+  }
+  h1::after {
+    content: "©";
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 18%;
+    right: 6.5%;
+  }
+  h1::before {
+    content: "model management";
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 0.9vw;
+    position: absolute;
+    bottom: 11%;
+    right: 15%;
   }
   h2 {
     width: 20%;
@@ -536,6 +555,7 @@ body {
     animation-timing-function: linear;
     position: relative;
     h1 {
+      border: 1px solid #000;
       width: calc(100% / 3);
       height: 100%;
       display: inline-block;
