@@ -700,6 +700,7 @@ body {
           width: 100%;
           height: 100%;
           margin-right: 1.8vw;
+          padding: 0.1vw 0.3vw;
           font-size: 1.3020833333333333vw;
           font-weight: 500;
         }
@@ -707,6 +708,7 @@ body {
       h4 {
         width: 100%;
         height: 100%;
+        font-size: 1vw;
         font-weight: 500;
       }
     }
@@ -830,7 +832,6 @@ body {
   #below-updates {
     height: 50%;
     .below-updates-elements {
-      height: calc(100% / 5.2);
       padding: 0;
       h2 {
         height: auto;
@@ -855,5 +856,100 @@ body {
         }
       }
     }
+  }
+
+  #page4 {
+    height: auto;
+    padding: 0vw 4.2vw 4.2vw;
+    #page4-part1 {
+      width: auto;
+    }
+    #page4-part2 {
+      width: auto;
+      #page4-part2-element1 {
+        h1 {
+          padding-bottom: 2.4vw;
+          font-size: 2.9296875vw;
+        }
+        h2 {
+          padding-bottom: 2.4vw;
+        }
+        h4 {
+          padding-bottom: 3.1vw;
+        }
+      }
+    }
+  }
+
+  #orange-jacket-girl {
+    height: auto;
+    padding: 1vw 0;
+  }
+
+  #page5 {
+    height: auto;
+    #page5-part2 {
+      width: fit-content;
+      #page5-part2-element2 {
+        padding-top: 1.2vw;
+        h4 {
+          font-size: 1.4322916666666667vw;
+        }
+      }
+    }
+  }
+
+  #marquee2 {
+    .marquee2-elements {
+      h1 {
+        width: auto;
+      }
+    }
+  }
+
+  #page6 {
+    height: auto;
+    padding: 2.5vw 4.2vw 0;
+    #page6-heading {
+      h1 {
+        font-size: 2.9296875vw;
+      }
+    }
+    .page6-elements {
+      height: auto;
+    }
+  }
+
+  #footer {
+    height: 10vh;
+    padding-left: 1.5vw;
+    #footer-heading {
+      margin: 0.9vw 3vw 0 0;
+      font-size: 2.9296875vw;
+    }
+    #footer-heading::after,
+    #footer-heading::before {
+      display: none;
+    }
+    .footer-elements {
+      padding-top: 1.8vw;
+    }
+    #footer-last-child {
+      h2 {
+        height: 24%;
+        padding: 1.8vw 5.2vw 0 0;
+      }
+      #footer-last-child-part2 {
+        margin: 0 0 0 3vw;
+        #social-icons {
+          padding-bottom: 1.5vw;
+        }
+      }
+    }
+  }
+
+  #random {
+    width: 100%;
+    height: 2%;
   }
 }
