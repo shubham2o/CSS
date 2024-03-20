@@ -717,3 +717,143 @@ body {
   width: 100%;
   height: 4%;
 }
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #nav {
+    height: 5vh;
+    margin-top: 3.934375vw;
+    h1::after,
+    h1::before {
+      display: none;
+    }
+  }
+
+  #center {
+    height: 50%;
+    padding: 4.5vw 0vw 5vw;
+    #content {
+      #overlay {
+        height: 30%;
+        padding: 0 3vw;
+        #over1 {
+          height: 55%;
+          h1 {
+            font-size: 4.2vw;
+            font-weight: 500;
+          }
+          h2 {
+            padding: 1.2vw 1.5vw;
+            font-size: 2.8vw;
+            font-weight: 500;
+          }
+        }
+        #over2 {
+          height: 45%;
+          h4 {
+            font-family: "montserrat";
+            font-size: 2.5vw;
+          }
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  #marquee {
+    height: 10vh;
+    .container {
+      width: fit-content;
+      .inside-container {
+        width: fit-content;
+        img {
+          width: fit-content;
+        }
+      }
+    }
+  }
+
+  #alphabet {
+    height: 3.5vh;
+    margin: 2vw 0 7vw;
+  }
+
+  #page2 {
+    height: 50%;
+    #page2-part2 {
+      img {
+        object-position: 50% 50%;
+      }
+      #page2-part2-text {
+        h4 {
+          font-size: 1.4322916666666667vw;
+        }
+      }
+    }
+  }
+
+  #vogue-shot-heading {
+    h1 {
+      font-size: 2.9296875vw;
+    }
+  }
+
+  #page3 {
+    height: 50%;
+    #page3-part1 {
+      img {
+        height: 40%;
+        margin-top: calc(100% / 1.5);
+        object-fit: cover;
+      }
+    }
+  }
+
+  #lady-in-orange {
+    height: auto;
+    padding: 5.5vw 0vw 0vw;
+  }
+
+  #updates-heading {
+    h1 {
+      font-size: 2.9296875vw;
+      padding: 8vw 0 4.8vw 0;
+    }
+  }
+
+  #below-updates {
+    height: 50%;
+    .below-updates-elements {
+      height: calc(100% / 5.2);
+      padding: 0;
+      h2 {
+        height: auto;
+        font-size: 2.0322916666666667vw;
+      }
+      img {
+        height: 65%;
+      }
+      .inside-below-updates-elements {
+        width: 30%;
+      }
+      .inside-below-updates-elements,
+      .next-to-special-view {
+        text-align: right;
+        line-height: 1.1;
+        h1 {
+          font-size: 3.84375vw;
+        }
+        h4 {
+          padding-top: 1.5vw;
+          font-size: 1.64375vw;
+        }
+      }
+    }
+  }
+}
