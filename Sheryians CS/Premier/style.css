@@ -14,7 +14,7 @@ body {
 #main {
   width: 100%;
   height: 100%;
-  padding-top: 0.1px;
+  padding-top: 0.006510416666666667vw;
   background-color: #f8f8f8;
   position: relative;
 }
@@ -22,11 +22,11 @@ body {
 #nav {
   width: 100%;
   height: 12vh;
-  margin-top: 42px;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  margin-top: 2.734375vw;
+  border-top: 0.13020833333333334vw solid #000;
+  border-bottom: 0.13020833333333334vw solid #000;
   font-family: "montserrat";
-  letter-spacing: -1px;
+  letter-spacing: -0.06510416666666667vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,9 +35,8 @@ body {
     width: 23%;
     height: 100%;
     padding-left: 1.3vw;
-    font-size: 45px;
+    font-size: 2.9296875vw;
     font-family: "monument";
-    letter-spacing: -1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +63,8 @@ body {
   h2 {
     width: 20%;
     height: 100%;
-    border-right: 2px solid #000;
-    font-size: 20px;
+    border-right: 0.13020833333333334vw solid #000;
+    font-size: 1.3020833333333333vw;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -114,14 +113,14 @@ body {
           font-size: 3.6vw;
         }
         h2 {
-          border: 1px solid #fff;
+          border: 0.06510416666666667vw solid #fff;
           border-radius: 100%;
           padding: 1vw 1.3vw;
           font-size: 2vw;
         }
       }
       #over2 {
-        border-top: 1px solid #fff;
+        border-top: 0.06510416666666667vw solid #fff;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -166,7 +165,7 @@ body {
         width: 100%;
         height: 100%;
         padding: 0 0.5vw;
-        font-size: 17px;
+        font-size: 1.1067708333333333vw;
         text-align: center;
       }
     }
@@ -186,8 +185,8 @@ body {
   width: 100%;
   height: 11vh;
   margin: 3.2vw 0;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 0.13020833333333334vw solid #000;
+  border-bottom: 0.13020833333333334vw solid #000;
   font-style: italic;
   display: flex;
   justify-content: center;
@@ -196,13 +195,13 @@ body {
   position: relative;
   h5 {
     margin-right: 2vw;
-    border-bottom: 2px solid #000000;
+    border-bottom: 0.13020833333333334vw solid #000000;
     font-size: 2.2vw;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 0.1953125vw;
   }
   h6 {
-    border: 1px solid #00000000;
+    border: 0.06510416666666667vw solid #00000000;
     border-radius: 100%;
     padding: 0.4vw 0.7vw;
     font-size: 1.2vw;
@@ -210,7 +209,7 @@ body {
     transition: all ease 0.2s;
   }
   h6:hover {
-    border: 1px solid #000;
+    border: 0.06510416666666667vw solid #000;
     cursor: pointer;
   }
 }
@@ -258,9 +257,9 @@ body {
       h2 {
         width: 100%;
         height: 100%;
-        font-size: 22px;
+        font-size: 1.4322916666666667vw;
         font-weight: 500;
-        letter-spacing: -1px;
+        letter-spacing: -0.06510416666666667vw;
       }
       h4 {
         width: 103%;
@@ -281,7 +280,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 1.7vw 0 1.7vw 4.2vw;
-    letter-spacing: 2px;
+    letter-spacing: 0.13020833333333334vw;
   }
 }
 
@@ -303,9 +302,9 @@ body {
     }
     h2 {
       font-family: "montserrat";
-      font-size: 22px;
+      font-size: 1.4322916666666667vw;
       font-weight: 500;
-      letter-spacing: -1px;
+      letter-spacing: -0.06510416666666667vw;
     }
   }
   #page3-part2 {
@@ -343,7 +342,7 @@ body {
     height: 100%;
     text-align: center;
     padding: 7vw 0 4.8vw 0;
-    letter-spacing: 2px;
+    letter-spacing: 0.13020833333333334vw;
   }
 }
 
@@ -358,7 +357,7 @@ body {
   .below-updates-elements {
     width: 100%;
     height: calc(100% / 4.5);
-    border-top: 2px solid #000;
+    border-top: 0.13020833333333334vw solid #000;
     padding: 0 4vw;
     display: flex;
     justify-content: space-between;
@@ -367,8 +366,8 @@ body {
     h2 {
       width: 9vw;
       height: 14vh;
-      font-size: 22px;
-      letter-spacing: -1px;
+      font-size: 1.4322916666666667vw;
+      letter-spacing: -0.06510416666666667vw;
       font-weight: 500;
     }
     img {
@@ -389,8 +388,8 @@ body {
       height: auto;
       line-height: 1.4;
       h1 {
-        font-size: 36px;
-        letter-spacing: -1px;
+        font-size: 2.34375vw;
+        letter-spacing: -0.06510416666666667vw;
         font-weight: 500;
       }
       h4 {
@@ -399,7 +398,7 @@ body {
     }
   }
   .below-updates-elements:last-child {
-    border-bottom: 2px solid #000;
+    border-bottom: 0.13020833333333334vw solid #000;
   }
 }
 
@@ -437,22 +436,22 @@ body {
         height: auto;
         padding-bottom: 1.8vw;
         font-family: "monument";
-        letter-spacing: 1px;
+        letter-spacing: 0.06510416666666667vw;
         text-align: left;
       }
       h2 {
         width: 45%;
         height: auto;
         padding-bottom: 1.8vw;
-        font-size: 21px;
-        letter-spacing: -1px;
+        font-size: 1.3671875vw;
+        letter-spacing: -0.06510416666666667vw;
         font-weight: 500;
       }
       h4 {
         width: 100%;
         height: auto;
         padding-bottom: 2.3vw;
-        font-size: 17px;
+        font-size: 1.1067708333333333vw;
         font-weight: 500;
       }
     }
@@ -529,9 +528,9 @@ body {
       h2 {
         width: 30%;
         height: 100%;
-        font-size: 21.5px;
+        font-size: 1.3997395833333333vw;
         font-weight: 500;
-        letter-spacing: -1px;
+        letter-spacing: -0.06510416666666667vw;
       }
       h4 {
         width: 50%;
@@ -561,14 +560,14 @@ body {
     animation-timing-function: linear;
     position: relative;
     h1 {
-      border: 1px solid #000;
+      border: 0.06510416666666667vw solid #000;
       width: calc(100% / 3);
       height: 100%;
       display: inline-block;
-      font-size: 33px;
+      font-size: 2.1484375vw;
       font-family: "monument";
       background-color: rgba(128, 128, 128, 0.116);
-      -webkit-text-stroke: 1px white;
+      -webkit-text-stroke: 0.06510416666666667vw white;
       text-align: center;
     }
   }
@@ -588,7 +587,7 @@ body {
       width: 100%;
       height: 100%;
       font-family: "monument";
-      letter-spacing: 1px;
+      letter-spacing: 0.06510416666666667vw;
     }
   }
   .page6-elements {
@@ -603,8 +602,8 @@ body {
       width: 100%;
       height: 100%;
       font-family: "montserrat";
-      font-size: 21px;
-      letter-spacing: -1px;
+      font-size: 1.3671875vw;
+      letter-spacing: -0.06510416666666667vw;
       font-weight: 500;
       line-height: 1.35;
       position: relative;
@@ -612,10 +611,10 @@ body {
     h2::before {
       content: "B";
       margin-right: 0.6vw;
-      border: 2px solid #000;
+      border: 0.13020833333333334vw solid #000;
       border-radius: 100%;
       padding: 0.15vw 0.7vw;
-      font-size: 16px;
+      font-size: 1.0416666666666667vw;
       position: relative;
     }
     img {
@@ -632,11 +631,11 @@ body {
 #footer {
   width: 100%;
   height: 30vh;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 0.13020833333333334vw solid #000;
+  border-bottom: 0.13020833333333334vw solid #000;
   padding-left: 4.2vw;
   font-family: "montserrat";
-  letter-spacing: -1px;
+  letter-spacing: -0.06510416666666667vw;
   display: flex;
   position: relative;
   #footer-heading {
@@ -644,7 +643,6 @@ body {
     height: 5.5vh;
     margin: 0.9vw 2.6vw 0 0;
     font-family: "monument";
-    letter-spacing: -1px;
     position: relative;
   }
   #footer-heading::after {
@@ -667,9 +665,9 @@ body {
   .footer-elements {
     width: 25%;
     height: 100%;
-    border-right: 2px solid #000;
+    border-right: 0.13020833333333334vw solid #000;
     padding-top: 1.2vw;
-    font-size: 20px;
+    font-size: 1.3020833333333333vw;
     font-weight: 500;
     text-align: center;
     position: relative;
@@ -681,9 +679,9 @@ body {
     h2 {
       width: 100%;
       height: 33%;
-      border-bottom: 2px solid #000;
+      border-bottom: 0.13020833333333334vw solid #000;
       padding: 1.2vw 5.2vw 0 0;
-      font-size: 20px;
+      font-size: 1.3020833333333333vw;
       font-weight: 500;
       text-align: center;
       position: relative;
@@ -702,7 +700,7 @@ body {
           width: 100%;
           height: 100%;
           margin-right: 1.8vw;
-          font-size: 20px;
+          font-size: 1.3020833333333333vw;
           font-weight: 500;
         }
       }
