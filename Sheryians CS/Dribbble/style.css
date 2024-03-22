@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "montserrat";
+  background-color: #f8f7f4;
+}
+
+#page1 {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.006510416666666667vw;
+  position: relative;
+
+  #nav-component {
+    width: 100%;
+    height: 14.388489208633093vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    #nav-part1 {
+      width: 40%;
+      height: auto;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      position: relative;
+      h4 {
+        padding: 0 1vw;
+        font-size: 1em;
+        font-weight: 600;
+      }
+    }
+    img {
+      width: fit-content;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+    #nav-part2 {
+      width: 40%;
+      height: 6.906474820143885vh;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      position: relative;
+      #search-element > input,
+      > input {
+        width: auto;
+        height: 6.706474820143885vh;
+        margin-left: 1.5vw;
+        border: transparent;
+        border-radius: 30px;
+        padding: 0 1.5vw;
+        font-family: "montserrat";
+        font-size: 1em;
+        font-weight: 600;
+        position: relative;
+      }
+      #search-element {
+        input {
+          width: 18vw;
+          margin-left: 0;
+          outline: none;
+          padding-left: 2.8vw;
+          font-weight: 500;
+          display: block;
+          position: relative;
+        }
+        i {
+          font-size: 1.11em;
+          position: absolute;
+          top: 33%;
+          left: 26%;
+        }
+      }
+      #log-in-element {
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+      #sign-up-element {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+    #nav-part1 > h4:hover,
+    img:hover,
+    #nav-part2 > #log-in-element:hover,
+    #nav-part2 > #sign-up-element:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+
+  #content-component {
+    width: 100%;
+    height: calc(100% - 14.388489208633093vh);
+  }
+}
