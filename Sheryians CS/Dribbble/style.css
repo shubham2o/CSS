@@ -109,10 +109,14 @@ body {
       width: auto;
       height: auto;
       border-radius: 30px;
-      padding: 0.8vw 1.1vw;
-      font-family: "Source Serif 4", Georgia, serif;
-      font-size: 1.165em;
-      background-color: #ded5e7;
+      padding: 0.6vw 1.1vw;
+      font-size: 1.11em;
+      font-weight: 600;
+      background-color: #ffff66;
+      animation-name: background-color-animation;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
     }
     h1 {
       width: 58%;
@@ -144,5 +148,38 @@ body {
       cursor: pointer;
       opacity: 0.6;
     }
+  }
+}
+
+@keyframes background-color-animation {
+  10% {
+    background-color: #b2b2ff;
+  }
+  20% {
+    background-color: #ff7373;
+  }
+  30% {
+    background-color: #40e0d0;
+  }
+  40% {
+    background-color: #d3ffce;
+  }
+  50% {
+    background-color: #bada55;
+  }
+  60% {
+    background-color: #ff7f50;
+  }
+  70% {
+    background-color: #ffb2b2;
+  }
+  80% {
+    background-color: #ff80ed;
+  }
+  90% {
+    background-color: #d6c5c6;
+  }
+  100% {
+    background-color: #ffff66;
   }
 }
