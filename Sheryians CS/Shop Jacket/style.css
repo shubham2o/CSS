@@ -29,7 +29,7 @@ body {
 
   i {
     border-radius: 15px;
-    padding: 0.153125vw 0.390625vw;
+    padding: 0.21vw 0.3vw;
     font-size: 0.938em;
     background-color: black;
     color: white;
@@ -41,8 +41,8 @@ body {
   padding: 0 5.859375vw;
 
   h1 {
-    font-size: 5vw;
-    line-height: 5.1vw;
+    font-size: 4.6em;
+    line-height: 80px;
   }
 }
 
@@ -94,8 +94,75 @@ body {
 
 #section2 {
   width: 100%;
-  height: 40%;
+  height: 100%;
   background-image: url(https://images.unsplash.com/photo-1508418717103-8b56bcf03360?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
-  background-position: 0 25%;
+  background-position: 50% 50%;
+}
+
+@media (max-width: 800px) {
+  #nav {
+    height: 5.5%;
+    padding: 0 4.5vw;
+    gap: 3.5vw;
+
+    h4 {
+      font-size: 0.688em;
+    }
+
+    i {
+      padding: 1vw 1.05vw;
+      font-size: 0.65em;
+    }
+  }
+
+  #jumbotron {
+    height: auto;
+    padding: 0;
+
+    h1 {
+      padding: 1vw 4.5vw;
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 50px;
+    }
+  }
+
+  #section1 {
+    height: 30%;
+    padding: 0 4.5vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    #article1 {
+      width: 100%;
+      height: auto;
+      padding-top: 2vw;
+      font-size: 0.8em;
+    }
+
+    #article2 {
+      width: 100%;
+      height: 40%;
+      padding-bottom: 2vw;
+
+      div {
+        h4 {
+          font-size: 0.8em;
+        }
+
+        h1 {
+          font-size: 1.2em;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  #section2 {
+    background-size: initial;
+    background-position: 50% 43.5%;
+  }
 }
