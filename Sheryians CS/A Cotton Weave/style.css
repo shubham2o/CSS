@@ -105,7 +105,7 @@ body {
 #aside {
   width: 7.8125vw;
   height: 17.26618705035971vh;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: rgb(44, 44, 44);
   color: white;
   position: absolute;
@@ -114,6 +114,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1em;
+  text-align: center;
 }
 
 @media (max-width: 680px) {
@@ -125,7 +127,7 @@ body {
   #section1 {
     width: 100%;
     height: 40%;
-    grid-template-rows: 52% 18% 9% 21%;
+    grid-template-rows: 47% 16.5% 9.5% 27%;
 
     h1 {
       display: flex;
@@ -147,21 +149,21 @@ body {
     p {
       width: 100%;
       height: 100%;
-      font-size: 0.875em;
-      line-height: 1.2;
+      font-size: 0.83em;
+      line-height: 1.14;
     }
   }
 
   #section2 {
     width: 100%;
     height: 60%;
-    display: flex;
+    padding-top: 4vw;
     flex-direction: column;
 
     h2 {
       width: 100%;
       height: auto;
-      margin: 8vw 0 2vw;
+      margin: 0vw 0 2vw;
       font-size: 1.5em;
       transform: none;
     }
@@ -173,7 +175,7 @@ body {
       flex-direction: column-reverse;
 
       #section2-right-top {
-        margin: 2vw 0.5vw 4vw;
+        margin: 2.5vw 0.5vw 6vw;
       }
 
       #section2-right-bottom {
@@ -183,9 +185,11 @@ body {
   }
 
   #aside {
-    width: 28%;
-    height: 12%;
-    top: 41.5%;
-    left: 69%;
+    width: auto;
+    height: auto;
+    padding: 9vw 2.5vw;
+    top: 40.5%;
+    left: 74%;
+    font-size: 0.8em;
   }
 }
