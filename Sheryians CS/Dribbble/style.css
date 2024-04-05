@@ -19,7 +19,7 @@ body {
 #page1 {
   width: 100%;
   height: 80%;
-  padding-top: 0.006510416666666667vw;
+  padding-top: 0.014388489208633094vh;
   background-color: #f8f7f4;
 
   #nav-component {
@@ -38,7 +38,7 @@ body {
 
       h4 {
         padding: 0 1.0416666666666667vw;
-        font-size: 1em;
+        font-size: 1.0416666666666667vw;
         font-weight: 600;
       }
     }
@@ -59,12 +59,12 @@ body {
       #search-element > input,
       > input {
         width: auto;
-        height: 6.706474820143885vh;
+        height: 6.7vh;
         margin-left: 1.5vw;
         border: transparent;
         border-radius: 30px;
         padding: 0 1.5vw;
-        font-size: 1em;
+        font-size: 0.9vw;
         font-weight: 600;
       }
 
@@ -79,10 +79,10 @@ body {
         }
 
         i {
-          font-size: 1.11em;
+          font-size: 1.0562500000000002vw;
           position: absolute;
-          top: 30.5%;
-          left: 7.2%;
+          top: 29.5%;
+          left: 7%;
         }
       }
 
@@ -110,7 +110,7 @@ body {
   #content-component {
     width: 100%;
     height: calc(100% - 14.388489208633093vh);
-    padding-top: 5vw;
+    padding-top: 11.050359712230216vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,8 +121,8 @@ body {
       width: auto;
       height: auto;
       border-radius: 30px;
-      padding: 0.8vw 1.1vw;
-      font-size: 1.11em;
+      padding: 1.5vh 1.1vw;
+      font-size: 1.1562500000000002vw;
       font-weight: 600;
       background-color: #ffff66;
       animation-name: background-color-animation;
@@ -136,16 +136,15 @@ body {
       height: auto;
       padding: 0 0.9vw;
       font-family: "Source Serif 4", Georgia, serif;
-      font-size: 5.125em;
+      font-size: 5.338541666666667vw;
       font-weight: 400;
       line-height: 82px;
       letter-spacing: -0.5px;
     }
 
     h2 {
-      font-size: 1.38em;
+      font-size: 1.4375vw;
       font-weight: 500;
-      line-height: 38px;
     }
 
     input {
@@ -154,7 +153,7 @@ body {
       border: transparent;
       border-radius: 30px;
       padding: 0 1.5vw;
-      font-size: 1em;
+      font-size: 1.0416666666666667vw;
       font-weight: 600;
       background-color: #000;
       color: #fff;
@@ -219,7 +218,7 @@ body {
   .marquee-container {
     width: 100%;
     height: 100%;
-    padding: 5vw 0;
+    padding: 11.05vh 0;
     display: inline-block;
     animation-name: marquee-animation;
     animation-duration: 30s;
@@ -250,15 +249,15 @@ body {
         h4 {
           width: 85%;
           height: auto;
-          margin: 0.4vw 0 0 0.7vw;
-          font-size: 1em;
+          margin: 0.8840287769784174vh 0 0 0.7vw;
+          font-size: 1.0416666666666667vw;
           font-weight: 500;
         }
 
         .content-info-domain {
           width: auto;
           height: auto;
-          margin-top: 0.8vw;
+          margin-top: 1.7680575539568348vh;
           display: flex;
           justify-content: start;
 
@@ -266,9 +265,9 @@ body {
             margin-right: 0.35vw;
             border: 1px solid #ffffff59;
             border-radius: 20px;
-            padding: 0.4vw 0.7vw;
+            padding: 0.8840287769784174vh 0.7vw;
             text-align: center;
-            font-size: 0.8em;
+            font-size: 0.79vw;
             font-weight: 600;
           }
         }
@@ -294,18 +293,18 @@ body {
 #page2 {
   width: 100%;
   height: auto;
-  padding-bottom: 12vw;
+  padding-bottom: 26.5vh;
 
   #page2-heading-component {
     width: 100%;
     height: auto;
-    margin: 2vw 0vw 3vw 0vw;
+    margin: 4.0143884892086vh 0vw 6.630215827338129vh 0vw;
     text-align: center;
 
     h1 {
-      padding: 0.5vw 0;
+      padding: 1.1vh 0;
       font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 3.25em;
+      font-size: 3.3854166666666665vw;
       font-weight: 400;
       line-height: 56px;
     }
@@ -319,7 +318,7 @@ body {
     .inside-design-component {
       width: 20.9vw;
       height: 40vh;
-      margin: 0 1.9vw 2.3vw 0;
+      margin: 0 1.9vw 5.083165467625899vh 0;
       display: inline-block;
 
       img {
@@ -345,7 +344,7 @@ body {
           transparent
         );
         color: #ffffff;
-        font-size: 1.125em;
+        font-size: 1vw;
         opacity: 0;
 
         h4 {
@@ -357,9 +356,9 @@ body {
         i {
           width: 2.5692708333333335vw;
           height: 5.699280575539568vh;
-          margin-bottom: 0.2vw;
+          margin-bottom: 0.4420143884892087vh;
           border-radius: 50px;
-          padding: 0.80525vw 0;
+          padding: 1.77vh 0;
           text-align: center;
           background-color: #ffffff;
           color: #000;
@@ -369,7 +368,7 @@ body {
       .text-component-inside-page2 {
         width: 100%;
         height: 4.5vh;
-        padding-top: 0.15vw;
+        padding-top: 0.33vh;
         display: flex;
         text-align: center;
 
@@ -389,18 +388,18 @@ body {
 
           h4 {
             margin-right: 0.5vw;
-            padding-top: 0.14vw;
-            font-size: 1em;
+            padding-top: 0.3vh;
+            font-size: 0.95vw;
             font-weight: 500;
             line-height: 16px;
             color: #0d0c22;
+            text-align: left;
           }
 
           h6 {
             border-radius: 5px;
-            padding: 0.3vw 0.27vw;
-            font-size: 0.75em;
-            line-height: 10px;
+            padding: 0.25vw;
+            font-size: 0.7vw;
             background-color: #6e6d7a86;
             color: #fff;
           }
@@ -419,13 +418,13 @@ body {
 
           i {
             margin-left: 0.5vw;
-            font-size: 1.25em;
+            font-size: 1.25vw;
             color: #a39aaa;
           }
 
           h5 {
-            margin: 0 0.16vw 0 0.25vw;
-            font-size: 0.938em;
+            margin: 0 0.16vw 0 0.2vw;
+            font-size: 0.9114583333333334vw;
             font-weight: 500;
             line-height: 20px;
             color: #3d3d4e;
